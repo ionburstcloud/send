@@ -1,13 +1,14 @@
-import FileSender from './fileSender';
-import FileReceiver from './fileReceiver';
-import { copyToClipboard, delay, openLinksInNewTab, percent } from './utils';
 import * as metrics from './metrics';
-import { bytes, locale } from './utils';
-import okDialog from './ui/okDialog';
+import FileReceiver from './fileReceiver';
+import FileSender from './fileSender';
 import copyDialog from './ui/copyDialog';
+import faviconProgressbar from './ui/faviconProgressbar';
+import okDialog from './ui/okDialog';
 import shareDialog from './ui/shareDialog';
 import signupDialog from './ui/signupDialog';
 import surveyDialog from './ui/surveyDialog';
+import { bytes, locale } from './utils';
+import { copyToClipboard, delay, openLinksInNewTab, percent } from './utils';
 
 export default function(state, emitter) {
   let lastRender = 0;
@@ -29,6 +30,7 @@ export default function(state, emitter) {
     if (updateTitle) {
       emitter.emit('DOMTitleChange', percent(state.transfer.progressRatio));
     }
+    faviconProgressbar.updateFavicon(state.transfer.progressRatio);
     render();
   }
 
@@ -37,6 +39,7 @@ export default function(state, emitter) {
     document.addEventListener('focus', () => {
       updateTitle = false;
       emitter.emit('DOMTitleChange', 'Send');
+      faviconProgressbar.updateFavicon(0);
     });
     checkFiles();
   });
