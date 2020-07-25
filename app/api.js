@@ -61,7 +61,10 @@ async function fetchWithAuth(url, params, keychain) {
   const result = {};
   params = params || {};
   const h = await keychain.authHeader();
-  params.headers = new Headers({ Authorization: h });
+  params.headers = new Headers({
+    Authorization: h,
+    'Content-Type': 'application/json'
+  });
   const response = await fetch(url, params);
   result.response = response;
   result.ok = response.ok;
