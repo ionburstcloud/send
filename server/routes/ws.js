@@ -41,6 +41,14 @@ module.exports = function(ws, req) {
         ? config.max_downloads
         : config.anon_max_downloads;
 
+      if (config.fxa_required && !user) {
+        ws.send(
+          JSON.stringify({
+            error: 401
+          })
+        );
+        return ws.close();
+      }
       if (
         !metadata ||
         !auth ||
