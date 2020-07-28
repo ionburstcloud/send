@@ -32,55 +32,54 @@ module.exports = function(app) {
   });
   if (!IS_DEV) {
     let csp = {
-        directives: {
-          defaultSrc: ["'self'"],
-          connectSrc: [
-            "'self'",
-            'wss://*.dev.lcip.org',
-            'wss://*.send.nonprod.cloudops.mozgcp.net',
-            config.base_url.replace(/^https:\/\//, 'wss://'),
-            'https://*.dev.lcip.org',
-            'https://accounts.firefox.com',
-            'https://*.accounts.firefox.com',
-            'https://sentry.prod.mozaws.net'
-          ],
-          imgSrc: [
-            "'self'",
-            'https://*.dev.lcip.org',
-            'https://firefoxusercontent.com',
-            'https://secure.gravatar.com'
-          ],
-          scriptSrc: [
-            "'self'",
-            function(req) {
-              return `'nonce-${req.cspNonce}'`;
-            }
-          ],
-          formAction: ["'none'"],
-          frameAncestors: ["'none'"],
-          objectSrc: ["'none'"],
-          reportUri: '/__cspreport__'
-        }
+      directives: {
+        defaultSrc: ["'self'"],
+        connectSrc: [
+          "'self'",
+          'wss://*.dev.lcip.org',
+          'wss://*.send.nonprod.cloudops.mozgcp.net',
+          config.base_url.replace(/^https:\/\//, 'wss://'),
+          'https://*.dev.lcip.org',
+          'https://accounts.firefox.com',
+          'https://*.accounts.firefox.com',
+          'https://sentry.prod.mozaws.net'
+        ],
+        imgSrc: [
+          "'self'",
+          'https://*.dev.lcip.org',
+          'https://firefoxusercontent.com',
+          'https://secure.gravatar.com'
+        ],
+        scriptSrc: [
+          "'self'",
+          function(req) {
+            return `'nonce-${req.cspNonce}'`;
+          }
+        ],
+        formAction: ["'none'"],
+        frameAncestors: ["'none'"],
+        objectSrc: ["'none'"],
+        reportUri: '/__cspreport__'
       }
+    };
 
-    csp.directives.connectSrc.push(config.base_url.replace(/^https:\/\//,'wss://'))
-    if(config.fxa_csp_oauth_url != ""){
-      csp.directives.connectSrc.push(config.fxa_csp_oauth_url)
-    }
-    if(config.fxa_csp_content_url != "" ){
-      csp.directives.connectSrc.push(config.fxa_csp_content_url)
-    }
-    if(config.fxa_csp_profile_url != "" ){
-      csp.directives.connectSrc.push(config.fxa_csp_profile_url)
-    }
-    if(config.fxa_csp_profileimage_url != ""){
-      csp.directives.imgSrc.push(config.fxa_csp_profileimage_url)
-    }
-
-
-    app.use(
-      helmet.contentSecurityPolicy(csp)
+    csp.directives.connectSrc.push(
+      config.base_url.replace(/^https:\/\//, 'wss://')
     );
+    if (config.fxa_csp_oauth_url != '') {
+      csp.directives.connectSrc.push(config.fxa_csp_oauth_url);
+    }
+    if (config.fxa_csp_content_url != '') {
+      csp.directives.connectSrc.push(config.fxa_csp_content_url);
+    }
+    if (config.fxa_csp_profile_url != '') {
+      csp.directives.connectSrc.push(config.fxa_csp_profile_url);
+    }
+    if (config.fxa_csp_profileimage_url != '') {
+      csp.directives.imgSrc.push(config.fxa_csp_profileimage_url);
+    }
+
+    app.use(helmet.contentSecurityPolicy(csp));
   }
 
   app.use(function(req, res, next) {
@@ -89,6 +88,19 @@ module.exports = function(app) {
       'Cache-Control',
       'private, no-cache, no-store, must-revalidate, max-age=0'
     );
+    next();
+  });
+  app.use(function(req, res, next) {
+    try {
+      // set by the load balancer
+      const [country, state] = req.header('X-Client-Geo-Location').split(',');
+      req.geo = {
+        country,
+        state
+      };
+    } catch (e) {
+      req.geo = {};
+    }
     next();
   });
   app.use(bodyParser.json());
