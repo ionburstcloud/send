@@ -136,7 +136,7 @@
     "@dannycoates/express-ws": "^5.0.3",
     "@fluent/bundle": "^0.13.0",
     "@fluent/langneg": "^0.3.0",
-    "@google-cloud/storage": "^4.1.1",
+    "@google-cloud/storage": "^5.1.2",
     "@sentry/node": "^5.26.0",
     "aws-sdk": "^2.772.0",
     "body-parser": "^1.19.0",
