@@ -2,7 +2,8 @@ image: "node:12-slim"
 
 stages:
   - test
-  - package
+  - artifact
+  - release
 
 before_script:
   # Install dependencies
@@ -23,8 +24,9 @@ test:
     - npm run lint
     - npm test
 
-package-docker:
-  stage: package
+# Release Docker image artifact for easy testing
+artifact-docker:
+  stage: artifact
   image: docker:latest
   services:
     - docker:dind
@@ -37,6 +39,33 @@ package-docker:
     # Login in to registry
     - 'docker login registry.gitlab.com -u $DOCKER_USER -p $DOCKER_PASS'
 
-    # build and push image
+    # Build and push image, report image name
     - docker build -t $IMG_NAME .
     - docker push $IMG_NAME
+    - 'echo Docker image artifact published, available as:'
+    - 'echo "  docker pull $IMG_NAME"'
+
+# Release public Docker image
+release-docker:
+  stage: release
+  image: docker:latest
+  services:
+    - docker:dind
+  only:
+    - /^v(\d+\.)*\d+$/
+  before_script: []
+  script:
+    - export IMG_NAME=registry.gitlab.com/timvisee/send:$CI_COMMIT_REF_NAME
+    - export IMG_NAME_LATEST=registry.gitlab.com/timvisee/send:latest
+
+    # Login in to registry
+    - 'docker login registry.gitlab.com -u $DOCKER_USER -p $DOCKER_PASS'
+
+    # Build and push image, report image name
+    - docker build -t $IMG_NAME .
+    - docker tag $IMG_NAME $IMG_NAME_LATEST
+    - docker push $IMG_NAME
+    - docker push $IMG_NAME_LATEST
+    - 'echo Docker image artifact published, available as:'
+    - 'echo "  docker pull $IMG_NAME_LATEST"'
+    - 'echo "  docker pull $IMG_NAME"'
