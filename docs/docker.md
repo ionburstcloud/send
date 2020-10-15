@@ -24,5 +24,5 @@ $ docker run --net=host -e 'NODE_ENV=production' \
   -e 'SENTRY_CLIENT=https://51e23d7263e348a7a3b90a5357c61cb2@sentry.prod.mozaws.net/168' \
   -e 'SENTRY_DSN=https://51e23d7263e348a7a3b90a5357c61cb2:65e23d7263e348a7a3b90a5357c61c44@sentry.prod.mozaws.net/168' \
   -e 'BASE_URL=https://send.firefox.com' \
-  mozilla/send:latest
+  registry.gitlab.com/timvisee/send:latest
 ```
