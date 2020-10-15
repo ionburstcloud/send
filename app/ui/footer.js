@@ -21,9 +21,7 @@ class Footer extends Component {
       <footer
         class="flex flex-col md:flex-row items-start w-full flex-none self-start p-6 md:p-8 font-medium text-xs text-grey-60 dark:text-grey-40 md:items-center justify-between"
       >
-        <a class="mozilla-logo m-2" href="https://www.mozilla.org/">
-          Mozilla
-        </a>
+        <div></div>
         <ul
           class="flex flex-col md:flex-row items-start md:items-center md:justify-end"
         >
