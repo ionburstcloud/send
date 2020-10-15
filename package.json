@@ -1,10 +1,13 @@
 {
-  "name": "firefox-send",
+  "name": "send",
   "description": "File Sharing Experiment",
   "version": "3.0.22",
   "author": "Mozilla (https://mozilla.org)",
-  "repository": "mozilla/send",
-  "homepage": "https://github.com/mozilla/send/",
+  "contributors": [
+    "Tim Visee <3a4fb3964f@sinenomine.email> (https://timvisee.com)"
+  ],
+  "repository": "gitlab:timvisee/send",
+  "homepage": "https://gitlab.com/timvisee/send/",
   "license": "MPL-2.0",
   "private": true,
   "scripts": {
