@@ -2,6 +2,7 @@ image: "node:12-slim"
 
 stages:
   - test
+  - package
 
 before_script:
   # Install dependencies
@@ -21,3 +22,20 @@ test:
     - npm ci
     - npm run lint
     - npm test
+
+package-docker:
+  stage: package
+  image: docker:latest
+  services:
+    - docker:dind
+  only:
+    - master
+  script:
+    - export IMG_NAME=registry.gitlab.com/timvisee/send:master-$CI_COMMIT_SHA
+
+    # Login in to registry
+    - 'docker login registry.gitlab.com -u $DOCKER_USER -p $DOCKER_PASS'
+
+    # build and push image
+    - docker build -t $IMG_NAME .
+    - docker push $IMG_NAME
