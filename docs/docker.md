@@ -1,6 +1,12 @@
 ## Setup
 
-Run `docker build -t send:latest .` to create an image or `docker-compose up` to run a full testable stack. *We don't recommend using docker-compose for production.*
+Use `registry.gitlab.com/timvisee/send:latest` from [`timvisee/send`'s registry](https://gitlab.com/timvisee/send/container_registry) for the latest Docker image.
+
+```bash
+docker pull registry.gitlab.com/timvisee/send:latest
+```
+
+Or run `docker build -t send:latest .` to create an image locally or `docker-compose up` to run a full testable stack. *We don't recommend using docker-compose for production.*
 
 ## Environment variables:
 
