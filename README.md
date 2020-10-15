@@ -1,6 +1,7 @@
-# [![Send](./assets/icon.svg)](https://send.firefox.com/) Firefox Send
+# [![Send](./assets/icon.svg)](https://gitlab.com/timvisee/send/) Send
 
-[![CircleCI](https://img.shields.io/circleci/project/github/mozilla/send.svg)](https://circleci.com/gh/mozilla/send)
+Based on Mozilla's [Firefox Send](https://github.com/mozilla/send),
+with branding removed.
 
 **Docs:** [FAQ](docs/faq.md), [Encryption](docs/encryption.md), [Build](docs/build.md), [Docker](docs/docker.md), [Metrics](docs/metrics.md), [More](docs/)
 
