@@ -1,5 +1,4 @@
-# Firefox Send is a brand name and should not be localized.
-title = Firefox Send
+title = Send
 siteFeedback = Comentaris
 importingFile = Importacion…
 encryptingFile = Chiframent…
@@ -20,13 +19,13 @@ unlockButtonLabel = Desverrolhar
 downloadButtonLabel = Telecargar
 downloadFinish = Telecargament acabat
 fileSizeProgress = ({ $partialSize } sus { $totalSize })
-sendYourFilesLink = Ensajar Firefox Send
+sendYourFilesLink = Ensajar Send
 errorPageHeader = I a quicòm que truca.
 fileTooBig = Aqueste fichièr es tròp gròs per l’enviar. Sa talha deu èsser inferiora a { $size }.
 linkExpiredAlt = Lo ligam a expirat
 notSupportedHeader = Vòstre navegador es pas compatible.
 notSupportedLink = Perqué mon navegador es pas compatible ?
-notSupportedOutdatedDetail = Aquesta version de Firefox es pas compatibla amb la tecnologia web amb la quala fonciona Firefox Send. Vos cal metre a jorn lo navegador.
+notSupportedOutdatedDetail = Aquesta version de Firefox es pas compatibla amb la tecnologia web amb la quala fonciona Send. Vos cal metre a jorn lo navegador.
 updateFirefox = Metre a jorn Firefox
 deletePopupCancel = Anullar
 deleteButtonHover = Suprimir
@@ -34,8 +33,8 @@ footerLinkLegal = Mencions legalas
 footerLinkPrivacy = Vida privada
 footerLinkCookies = Cookies
 passwordTryAgain = Senhal incorrècte. Tornatz ensajar.
-javascriptRequired = Firefox Send requesís JavaScript
-whyJavascript = Perque Firefox Send requesís JavaScript ?
+javascriptRequired = Send requesís JavaScript
+whyJavascript = Perque Send requesís JavaScript ?
 enableJavascript = Volgatz activar lo JavaScript e ensajatz tornamai.
 # A short representation of a countdown timer containing the number of hours and minutes remaining as digits, example "13h 47m"
 expiresHoursMinutes = { $hours } h { $minutes } min
@@ -48,8 +47,7 @@ passwordSetError = Aqueste senhal a pas pogut èsser definit
 
 ## Send version 2 strings
 
-# Firefox Send, Send, Firefox, Mozilla are proper names and should not be localized
--send-brand = Firefox Send
+-send-brand = Send
 -send-short-brand = Send
 -firefox = Firefox
 -mozilla = Mozilla

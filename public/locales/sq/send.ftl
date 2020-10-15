@@ -1,5 +1,4 @@
-# Firefox Send is a brand name and should not be localized.
-title = Firefox Send
+title = Send
 siteFeedback = Përshtypje
 importingFile = Po importohet…
 encryptingFile = Po fshehtëzohet…
@@ -20,13 +19,13 @@ unlockButtonLabel = Zhbllokoje
 downloadButtonLabel = Shkarkoje
 downloadFinish = Shkarkim i Plotësuar
 fileSizeProgress = ({ $partialSize } nga { $totalSize }) gjithsej
-sendYourFilesLink = Provoni Firefox Send
+sendYourFilesLink = Provoni Send
 errorPageHeader = Diç shkoi ters!
 fileTooBig = Kjo kartelë është shumë e madhe për ngarkim. Do të duhej të ishte më pak se { $size }.
 linkExpiredAlt = Lidhja skadoi
 notSupportedHeader = Shfletuesi juaj nuk mbulohet.
 notSupportedLink = Pse nuk mbulohet ky shfletues?
-notSupportedOutdatedDetail = Mjerisht, ky version i Firefox-it nuk e mbulon teknologjinë web mbi të cilën bazohet Firefox Send. Do t’ju duhet të përditësoni shfletuesin tuaj.
+notSupportedOutdatedDetail = Mjerisht, ky version i Firefox-it nuk e mbulon teknologjinë web mbi të cilën bazohet Send. Do t’ju duhet të përditësoni shfletuesin tuaj.
 updateFirefox = Përditësojeni Firefox-in
 deletePopupCancel = Anuloje
 deleteButtonHover = Fshije
@@ -34,8 +33,8 @@ footerLinkLegal = Ligjore
 footerLinkPrivacy = Privatësi
 footerLinkCookies = Cookies
 passwordTryAgain = Fjalëkalim i pasaktë. Riprovoni.
-javascriptRequired = Firefox Send lyp JavaScript
-whyJavascript = Ç’i duhet Firefox Send-it JavaScript-i?
+javascriptRequired = Send lyp JavaScript
+whyJavascript = Ç’i duhet Send-it JavaScript-i?
 enableJavascript = Ju lutemi, aktivizoni JavaScript-in dhe riprovoni.
 # A short representation of a countdown timer containing the number of hours and minutes remaining as digits, example "13h 47m"
 expiresHoursMinutes = { $hours }h { $minutes }m
@@ -48,8 +47,7 @@ passwordSetError = Ky fjalëkalim s’u caktua dot
 
 ## Send version 2 strings
 
-# Firefox Send, Send, Firefox, Mozilla are proper names and should not be localized
--send-brand = Firefox Send
+-send-brand = Send
 -send-short-brand = Send
 -firefox = Firefox
 -mozilla = Mozilla

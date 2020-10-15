@@ -1,5 +1,4 @@
-# Firefox Send is a brand name and should not be localized.
-title = Firefox Send
+title = Send
 siteFeedback = అభిప్రాయం
 importingFile = దిగుమతవుతోంది...
 encryptingFile = గుప్తీకరిస్తోంది...
@@ -20,7 +19,7 @@ unlockButtonLabel = తాళం తీయి
 downloadButtonLabel = దిగుమతి
 downloadFinish = దిగుమతి పూర్తయింది
 fileSizeProgress = { $totalSize }) యొక్క ({ $partialSize }
-sendYourFilesLink = Firefox sendను ప్రయత్నించండి
+sendYourFilesLink = sendను ప్రయత్నించండి
 errorPageHeader = ఏదో తప్పిదం జరిగింది!
 fileTooBig = ఆ ఫైలు ఎక్కించడానికి చాలా పెద్దగా ఉంది. ఫైళ్ళు { $size } కంటే తక్కువ పరిమాణంలో ఉండాలి.
 linkExpiredAlt = లంకె గడువు ముగిసింది
@@ -34,8 +33,8 @@ footerLinkLegal = చట్టపరమైన
 footerLinkPrivacy = గోప్యత
 footerLinkCookies = కుకీలు
 passwordTryAgain = సరికాని సంకేతపదం. మళ్ళీ ప్రయత్నించండి.
-javascriptRequired = Firefox Sendకి జావాస్క్రిప్టు కావాలి
-whyJavascript = Firefox Sendకి జావాస్క్రిప్టు ఎందుకు కావాలి?
+javascriptRequired = Sendకి జావాస్క్రిప్టు కావాలి
+whyJavascript = Sendకి జావాస్క్రిప్టు ఎందుకు కావాలి?
 enableJavascript = జావాస్క్రిప్టు చేతనంచేసి మళ్ళీ ప్రయత్నించండి.
 # A short representation of a countdown timer containing the number of hours and minutes remaining as digits, example "13h 47m"
 expiresHoursMinutes = { $hours }గం { $minutes }ని
@@ -48,8 +47,7 @@ passwordSetError = ఈ సంకేతపదం పెట్టలేకపో�
 
 ## Send version 2 strings
 
-# Firefox Send, Send, Firefox, Mozilla are proper names and should not be localized
--send-brand = Firefox Send
+-send-brand = Send
 -send-short-brand = పంపించు
 -firefox = Firefox
 -mozilla = Mozilla
