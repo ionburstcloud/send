@@ -6,7 +6,7 @@ To run all the tests use `npm test`. This will run the tests and produce a code 
 
 Unit tests reside in `test/frontend/tests`.
 
-Frontend tests can be ran in the browser by running `npm start` and then browsing to http://localhost:8080/test. Doing it this way will watch for changes and rerun the suite automatically.
+Frontend tests can be ran in the browser by running `npm start` and then browsing to http://localhost:1337/test. Doing it this way will watch for changes and rerun the suite automatically.
 
 You can also run them in headless Chrome by using `npm run test:frontend`. The results will be printed to the console.
 

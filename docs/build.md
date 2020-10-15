@@ -2,7 +2,7 @@ Send has two build configurations, development and production. Both can be run v
 
 # Development
 
-`npm start` launches a `webpack-dev-server` on port 8080 that compiles the assets and watches files for changes. It also serves the backend API and frontend unit tests via the `server/bin/dev.js` entrypoint. The frontend tests can be run in the browser by navigating to http://localhost:8080/test and will rerun automatically as the watched files are saved with changes.
+`npm start` launches a `webpack-dev-server` on port 1337 that compiles the assets and watches files for changes. It also serves the backend API and frontend unit tests via the `server/bin/dev.js` entrypoint. The frontend tests can be run in the browser by navigating to http://localhost:8080/test and will rerun automatically as the watched files are saved with changes.
 
 # Production
 

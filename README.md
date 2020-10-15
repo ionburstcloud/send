@@ -45,7 +45,7 @@ npm install
 npm start
 ```
 
-Then, browse to http://localhost:8080
+Then, browse to http://localhost:1337
 
 ---
 
@@ -100,7 +100,7 @@ see also [docs/deployment.md](docs/deployment.md)
 
 ## Android
 
-The android implementation is contained in the `android` directory, and can be viewed locally for easy testing and editing by running `ANDROID=1 npm start` and then visiting <http://localhost:8080>. CSS and image files are located in the `android/app/src/main/assets` directory.
+The android implementation is contained in the `android` directory, and can be viewed locally for easy testing and editing by running `ANDROID=1 npm start` and then visiting <http://localhost:1337>. CSS and image files are located in the `android/app/src/main/assets` directory.
 
 ---
 
