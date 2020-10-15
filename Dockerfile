@@ -1,7 +1,7 @@
 ##
-# Firefox Send - Mozilla
+# Send
 #
-# License https://github.com/mozilla/send/blob/master/LICENSE
+# License https://gitlab.com/timvisee/send/blob/master/LICENSE
 ##
 
 

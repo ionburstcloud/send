@@ -1,4 +1,4 @@
-## How big of a file can I transfer with Firefox Send?
+## How big of a file can I transfer with Send?
 
 There is a 2.5GB file size limit built in to Send(1GB for non-signed in users), however, in practice you may
 be unable to send files that large.  Send encrypts and decrypts the files in
@@ -17,9 +17,9 @@ Many browsers support this standard and should work fine, but some have not
 implemented it yet (mobile browsers lag behind on this, in
 particular).
 
-## Why does Firefox Send require JavaScript?
+## Why does Send require JavaScript?
 
-Firefox Send uses JavaScript to:
+Send uses JavaScript to:
 
 - Encrypt and decrypt files locally on the client instead of the server.
 - Render the user interface.
