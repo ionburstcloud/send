@@ -1,5 +1,4 @@
-# Firefox Send is a brand name and should not be localized.
-title = Firefox Send
+title = Send
 siteFeedback = Görüş bildir
 importingFile = İçe aktarılıyor…
 encryptingFile = Şifreleniyor…
@@ -16,13 +15,13 @@ unlockButtonLabel = Kilidi aç
 downloadButtonLabel = İndir
 downloadFinish = İndirme tamamlandı
 fileSizeProgress = ({ $partialSize } / { $totalSize })
-sendYourFilesLink = Firefox Send’i deneyin
+sendYourFilesLink = Send’i deneyin
 errorPageHeader = Bir şeyler ters gitti!
 fileTooBig = Dosyanız çok büyük. En fazla { $size } boyutunda olmalı.
 linkExpiredAlt = Bağlantı zaman aşımına uğramış
 notSupportedHeader = Tarayıcınız desteklenmiyor.
 notSupportedLink = Tarayıcım neden desteklenmiyor?
-notSupportedOutdatedDetail = Kullandığınız Firefox sürümü Firefox Send için gereken web teknolojilerini desteklemiyor. Tarayıcınızı güncellemeniz gerekiyor.
+notSupportedOutdatedDetail = Kullandığınız Firefox sürümü Send için gereken web teknolojilerini desteklemiyor. Tarayıcınızı güncellemeniz gerekiyor.
 updateFirefox = Firefox’u güncelle
 deletePopupCancel = Vazgeç
 deleteButtonHover = Sil
@@ -30,8 +29,8 @@ footerLinkLegal = Yasal Bilgiler
 footerLinkPrivacy = Gizlilik
 footerLinkCookies = Çerezler
 passwordTryAgain = Yanlış parola. Yeniden deneyin.
-javascriptRequired = Firefox Send için JavaScript gerekir
-whyJavascript = Firefox Send neden JavaScript kullanıyor?
+javascriptRequired = Send için JavaScript gerekir
+whyJavascript = Send neden JavaScript kullanıyor?
 enableJavascript = Lütfen JavaScript'i etkinleştirip yeniden deneyin.
 # A short representation of a countdown timer containing the number of hours and minutes remaining as digits, example "13h 47m"
 expiresHoursMinutes = { $hours } sa { $minutes } dk
@@ -44,8 +43,7 @@ passwordSetError = Parola ayarlanamadı
 
 ## Send version 2 strings
 
-# Firefox Send, Send, Firefox, Mozilla are proper names and should not be localized
--send-brand = Firefox Send
+-send-brand = Send
 -send-short-brand = Send
 -firefox = Firefox
 -mozilla = Mozilla

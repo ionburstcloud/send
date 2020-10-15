@@ -1,6 +1,7 @@
-# [![Firefox Send](./assets/icon.svg)](https://send.firefox.com/) Firefox Send
+# [![Send](./assets/icon.svg)](https://gitlab.com/timvisee/send/) Send
 
-[![CircleCI](https://img.shields.io/circleci/project/github/mozilla/send.svg)](https://circleci.com/gh/mozilla/send)
+Based on Mozilla's [Firefox Send](https://github.com/mozilla/send),
+with branding removed.
 
 **Docs:** [FAQ](docs/faq.md), [Encryption](docs/encryption.md), [Build](docs/build.md), [Docker](docs/docker.md), [Metrics](docs/metrics.md), [More](docs/)
 
@@ -70,7 +71,7 @@ The server is configured with environment variables. See [server/config.js](serv
 
 ## Localization
 
-Firefox Send localization is managed via [Pontoon](https://pontoon.mozilla.org/projects/test-pilot-firefox-send/), not direct pull requests to the repository. If you want to fix a typo, add a new language, or simply know more about localization, please get in touch with the [existing localization team](https://pontoon.mozilla.org/teams/) for your language or Mozilla’s [l10n-drivers](https://wiki.mozilla.org/L10n:Mozilla_Team#Mozilla_Corporation) for guidance.
+Send localization is managed via [Pontoon](https://pontoon.mozilla.org/projects/test-pilot-firefox-send/), not direct pull requests to the repository. If you want to fix a typo, add a new language, or simply know more about localization, please get in touch with the [existing localization team](https://pontoon.mozilla.org/teams/) for your language or Mozilla’s [l10n-drivers](https://wiki.mozilla.org/L10n:Mozilla_Team#Mozilla_Corporation) for guidance.
 
 see also [docs/localization.md](docs/localization.md)
 

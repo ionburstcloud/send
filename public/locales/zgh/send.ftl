@@ -1,4 +1,3 @@
-# Firefox Send is a brand name and should not be localized.
 title = ⴼⴰⵢⵔⴼⵓⴽⵙ ⵙⵉⵏⴷ
 siteFeedback = ⵜⴰⵙⴷⵎⵉⵔⵜ
 importingFile = ⴰⵙⴽⵛⵎ...
@@ -48,7 +47,6 @@ passwordSetError = ⵓⵔ ⵜⵣⵎⵉⵔ ⵜⴳⵓⵔⵉ ⴰ ⵏ ⵓⵣⵔⴰ�
 
 ## Send version 2 strings
 
-# Firefox Send, Send, Firefox, Mozilla are proper names and should not be localized
 -send-brand = ⴼⴰⵢⵔⴼⵓⴽⵙ ⵙⵉⵏⴷ
 -send-short-brand = ⵙⵉⵏⴷ
 -firefox = ⴼⴰⵢⵔⴼⵓⴽⵙ

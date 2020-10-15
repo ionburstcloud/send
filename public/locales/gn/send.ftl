@@ -1,5 +1,4 @@
-# Firefox Send is a brand name and should not be localized.
-title = Firefox Send
+title = Send
 siteFeedback = Je’ejey
 importingFile = Ojegueruhína…
 encryptingFile = Mo’ãmby…
@@ -20,13 +19,13 @@ unlockButtonLabel = Mbojera
 downloadButtonLabel = Mboguejy
 downloadFinish = Oguejypáma
 fileSizeProgress = ({ $partialSize } rehe { $totalSize })
-sendYourFilesLink = Eipuru Firefox Send
+sendYourFilesLink = Eipuru Send
 errorPageHeader = ¡Oiko jejavy!
 fileTooBig = Marandurenda tuichaiterei ehupi hag̃ua. Michĩveva’erã { $size } gui.
 linkExpiredAlt = Juajuha ndoikóiva
 notSupportedHeader = Ne kundaha ndorekói pytyvõ.
 notSupportedLink = ¿Mba’ére che kundahára ndorekói ñepytyvõ?
-notSupportedOutdatedDetail = Ko Firefox rembiapo ndaipu’akái ñanduti rembipurupyahu oikotevẽva Firefox Send. Embohekopyahúke ne kundahára.
+notSupportedOutdatedDetail = Ko Firefox rembiapo ndaipu’akái ñanduti rembipurupyahu oikotevẽva Send. Embohekopyahúke ne kundahára.
 updateFirefox = Firefox mbohekopyahu
 deletePopupCancel = Heja
 deleteButtonHover = Mboguete
@@ -34,8 +33,8 @@ footerLinkLegal = Añetegua
 footerLinkPrivacy = Ñemigua
 footerLinkCookies = Kookie
 passwordTryAgain = Ñe’ẽñemi ndoikóiva. Eha’ãjey.
-javascriptRequired = Firefox Send oikotevẽ JavaScript
-whyJavascript = ¿Mba’ére Firefox Send oikotevẽ JavaScript?
+javascriptRequired = Send oikotevẽ JavaScript
+whyJavascript = ¿Mba’ére Send oikotevẽ JavaScript?
 enableJavascript = Ikatúpa embojuruja JavaScript ha eha’ãjey uperire.
 # A short representation of a countdown timer containing the number of hours and minutes remaining as digits, example "13h 47m"
 expiresHoursMinutes = { $hours } h { $minutes } m
@@ -48,8 +47,7 @@ passwordSetError = Ndaikatúi oikóvo ko ñe’ẽñemi
 
 ## Send version 2 strings
 
-# Firefox Send, Send, Firefox, Mozilla are proper names and should not be localized
--send-brand = Firefox Send
+-send-brand = Send
 -send-short-brand = Send
 -firefox = Firefox
 -mozilla = Mozilla

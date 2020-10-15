@@ -7,7 +7,7 @@
 Adapted from [this spreadsheet](https://airtable.com/shrkcBPOLkvNFOrpp)
 
 - [ ] It should look and feel of an Android App
-- [ ] It should look and feel like the Firefox Send Web Client
+- [ ] It should look and feel like the Send Web Client
 
 ### Main Screen
 - [ ] It should clearly Indicate the name of the product
@@ -59,7 +59,7 @@ Adapted from [this spreadsheet](https://airtable.com/shrkcBPOLkvNFOrpp)
 - [ ] It should allow users to opt into notifications when their link is downloaded
 
 ## Annotations on Mobile Spec
-This document tracks differences between the UX spec for Firefox Send and the intended MVP.
+This document tracks differences between the UX spec for Send and the intended MVP.
 
 [Spec Link](https://mozilla.invisionapp.com/share/GNN6KKOQ5XS)
 
