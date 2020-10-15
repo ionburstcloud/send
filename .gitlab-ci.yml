@@ -30,6 +30,7 @@ package-docker:
     - docker:dind
   only:
     - master
+  before_script: []
   script:
     - export IMG_NAME=registry.gitlab.com/timvisee/send:master-$CI_COMMIT_SHA
 
