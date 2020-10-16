@@ -34,6 +34,7 @@ const server = app.listen(async function() {
     const page = await browser.newPage();
     page.on('console', onConsole);
     page.on('pageerror', console.log.bind(console));
+    await page.setDefaultNavigationTimeout(60000);
     await page.goto(`http://127.0.0.1:${server.address().port}/test`);
     await page.waitFor(() => typeof runner.testResults !== 'undefined', {
       polling: 1000,
