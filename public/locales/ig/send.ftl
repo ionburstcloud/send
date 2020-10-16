@@ -1,5 +1,4 @@
 title = Zipu
-siteFeedback = Nzaghachi
 importingFile = Mbubata…
 encryptingFile = ezoro ezo...
 decryptingFile = Kpebie

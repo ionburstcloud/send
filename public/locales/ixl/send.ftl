@@ -1,5 +1,4 @@
 title = Send
-siteFeedback = Aq'a yol sti'
 importingFile = Eq'otzan
 encryptingFile = La muj isik'lele
 decryptingFile = Ni jaj ve't isik'lele'

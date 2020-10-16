@@ -1,6 +1,5 @@
 title = Molawo
 siteSubtitle = web yimontalo
-siteFeedback = Potunu
 uploadPageLearnMore = Pobalajariya po'olo
 uploadPageBrowseButton = Tulawota berkas to delomo komputermu
 uploadPageBrowseButton1 = Tulawota berkas u detohulo

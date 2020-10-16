@@ -1,5 +1,4 @@
 title = Send
-siteFeedback = Zvirikutaurwa
 importingFile = Kutora faira
 encryptingFile = Kuinikiriputa
 enableJavascript = Ndinokumbira mubvumidze JavaScript moedza zvekare
