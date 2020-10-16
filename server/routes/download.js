@@ -7,6 +7,7 @@ module.exports = async function(req, res) {
   const id = req.params.id;
   try {
     const meta = req.meta;
+    const contentLength = await storage.length(id);
     const fileStream = await storage.get(id);
     let cancelled = false;
 
@@ -15,6 +16,10 @@ module.exports = async function(req, res) {
       fileStream.destroy();
     });
 
+    res.writeHead(200, {
+      'Content-Type': 'application/octet-stream',
+      'Content-Length': contentLength
+    });
     fileStream.pipe(res).on('finish', async () => {
       if (cancelled) {
         return;
@@ -26,6 +31,8 @@ module.exports = async function(req, res) {
       statDownloadEvent({
         id,
         ip: req.ip,
+        country: req.geo.country,
+        state: req.geo.state,
         owner: meta.owner,
         download_count: dl,
         ttl,

@@ -22,6 +22,12 @@ module.exports = function(state, emit) {
         data-no-csrf
       >
         <input
+          id="autocomplete-decoy"
+          class="hidden"
+          type="password"
+          value="lol"
+        />
+        <input
           id="password-input"
           class="w-full border-l border-t border-b rounded-l-lg rounded-r-none ${invalid
             ? 'border-red dark:border-red-40'
@@ -63,8 +69,13 @@ module.exports = function(state, emit) {
     const input = document.getElementById('password-input');
     const btn = document.getElementById('password-btn');
     label.classList.add('invisible');
-    input.classList.remove('border-red');
-    btn.classList.remove('bg-red', 'hover:bg-red', 'focus:bg-red');
+    input.classList.remove('border-red', 'dark:border-red-40');
+    btn.classList.remove(
+      'bg-red',
+      'hover:bg-red',
+      'focus:bg-red',
+      'dark:bg-red-40'
+    );
   }
 
   function checkPassword(event) {

@@ -107,7 +107,7 @@ tooManyArchives =
        *[other] Namái se permiten { $count } archivos
     }
 expiredTitle = Esti enllaz caducó.
-notSupportedDescription = { -send-brand } nun va funcionar con esti restolador. { -send-short-brand } funciona meyor cola versión última de { -firefox } y cola versión actual de la mayoría de restoladores.
+notSupportedDescription = { -send-brand } nun va funcionar con esti restolador. { -send-short-brand } funciona meyor cola última versión de { -firefox } y l'actual de la mayoría de restoladores.
 downloadFirefox = Baxar { -firefox }
 legalTitle = Avisu de privacidá de { -send-short-brand }
 legalDateStamp = Versión 1.0, con data del 12 de marzu de 2019
@@ -131,8 +131,8 @@ accountBenefitLargeFiles = Comparti ficheros d'hasta { $size }
 accountBenefitDownloadCount = Comparti ficheros con más xente
 accountBenefitTimeLimit =
     { $count ->
-        [one] Caltén activos los enllaces demientres 1 día
-       *[other] Caltén activos los enllaces demientres { $count } díes
+        [one] Caltién activos los enllaces demientres 1 día
+       *[other] Caltién activos los enllaces demientres { $count } díes
     }
 accountBenefitSync = Xestiona los ficheros compartíos dende cualesquier preséu
 accountBenefitMoz = Deprendi más tocante a otros servicios de { -mozilla }

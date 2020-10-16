@@ -51,6 +51,9 @@ passwordSetError = ఈ సంకేతపదం పెట్టలేకపో�
 -send-short-brand = పంపించు
 -firefox = Firefox
 -mozilla = Mozilla
+notifyUploadEncryptDone = మీ ఫైలు గుప్తీకరించబడింది, పంపడానికి సిద్ధంగా ఉంది
+# downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
+archiveExpiryInfo = { $downloadCount } లేదా { $timespan } తర్వాత కాలంచెల్లుతుంది
 timespanMinutes =
     { $num ->
         [one] 1 నిమిషం
@@ -109,6 +112,10 @@ accountBenefitTitle = ఒక { -firefox } ఖాతాని సృష్టి�
 # $size is the size of the file, displayed using the fileSize message as format (e.g. "2.5MB")
 accountBenefitLargeFiles = { $size } పరిమాణం ఫైళ్ళ వరకు పంచుకోండి
 accountBenefitDownloadCount = ఫైళ్లను ఎక్కువ మందితో పంచుకోండి
+accountBenefitTimeLimit =
+    { $count ->
+       *[other] లంకెలను { $count } రోజుల వరకు చేతనంగా ఉంచు
+    }
 accountBenefitSync = ఏదైనా పరికరం నుండి పంచుకున్న ఫైళ్ళను నిర్వహించండి
 accountBenefitMoz = ఇతర { -mozilla } సేవల గురించి తెలుసుకోండి
 signOut = నిష్క్రమించు
@@ -122,4 +129,7 @@ downloadFirefoxPromo = { -send-short-brand } క్రొత్త { -firefox } 
 # the next line after the colon contains a file name
 shareLinkDescription = మీ ఫైలుకు లంకెను పంచుకోండి:
 shareLinkButton = లంకెను పంచుకోండి
+# $name is the name of the file
+shareMessage = “{ $name }”‌ని { -send-brand }తో దించుకోండి: తేలికైన, సురక్షితమైన ఫైలు పంచుకోలు సేవ
+trailheadPromo = మీ అంతరంగికతను కాపాడుకోడానికి ఓ మార్గం ఉంది. Firefoxతో చేరండి.
 learnMore = ఇంకా తెలుసుకోండి.
