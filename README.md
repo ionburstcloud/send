@@ -14,30 +14,32 @@ A fork of Mozilla's [Firefox Send][mozilla-send].
 Mozilla discontinued Send, this fork is a community effort to keep the project
 up-to-date and alive.
 
-- Forked [at][fork-commit] Mozilla's latest public version
+- Forked [at][fork-commit] Mozilla's last publicly hosted version
 - _Mozilla_ & _Firefox_ branding [is][remove-branding-pr] removed so you can legally self-host
 - Kept compatible with [`ffsend`][ffsend] (CLI for Send)
 - Dependencies have been updated
-- Mozilla's [changes][mozilla-patches] since the fork have been selectively [mozilla-patches-pr][merged]
+- Mozilla's [changes][mozilla-patches] since the fork have been selectively [merged][mozilla-patches-pr]
 - Mozilla's experimental report feature, download tokens, trust warnings and FxA changes are not included
 
 Find an up-to-date Docker image here: [docs/docker.md](docs/docker.md)
 
-Find the original archived project by Mozilla [here][mozilla-send].
+The original project by Mozilla can be found [here][mozilla-send].
 The [`mozilla-master`][branch-mozilla-master] branch holds the `master` branch
 as left by Mozilla.
 The [`send-v3`][branch-send-v3] branch holds the commit tree of Mozilla's last
-public version, which this fork is based on.
+publicly hosted version, which this fork is based on.
 The [`send-v4`][branch-send-v4] branch holds the commit tree of Mozilla's last
 experimental version which was still a work in progress (featuring file
 reporting, download tokens, trust warnings and FxA changes), this has
 selectively been merged into this fork.
+Please consider to [donate][donate] to allow me to keep working on this.
 
 Thanks [Mozilla][mozilla] for building this amazing tool!
 
 [branch-mozilla-master]: https://gitlab.com/timvisee/send/-/tree/mozilla-master
 [branch-send-v3]: https://gitlab.com/timvisee/send/-/tree/send-v3
 [branch-send-v4]: https://gitlab.com/timvisee/send/-/tree/send-v4
+[donate]: https://timvisee.com/donate
 [ffsend]: https://github.com/timvisee/ffsend
 [fork-commit]: https://gitlab.com/timvisee/send/-/commit/3e9be676413a6e1baaf6a354c180e91899d10bec
 [mozilla-patches-pr]: https://gitlab.com/timvisee/send/-/merge_requests/3
