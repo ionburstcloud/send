@@ -1,6 +1,7 @@
 # [![Send](./assets/icon.svg)](https://gitlab.com/timvisee/send/) Send
 
 [![Build status on GitLab CI][gitlab-ci-master-badge]][gitlab-ci-link]
+[![Latest release][release-badge]][release-link]
 [![Docker image][docker-image-badge]][docker-image-link]
 [![Project license][repo-license-badge]](LICENSE)
 
@@ -8,6 +9,8 @@
 [docker-image-link]: https://gitlab.com/timvisee/send/container_registry/eyJuYW1lIjoidGltdmlzZWUvc2VuZCIsInRhZ3NfcGF0aCI6Ii90aW12aXNlZS9zZW5kL3JlZ2lzdHJ5L3JlcG9zaXRvcnkvMTQxODUwNC90YWdzP2Zvcm1hdD1qc29uIiwiaWQiOjE0MTg1MDQsImNsZWFudXBfcG9saWN5X3N0YXJ0ZWRfYXQiOm51bGx9
 [gitlab-ci-link]: https://gitlab.com/timvisee/send/pipelines
 [gitlab-ci-master-badge]: https://gitlab.com/timvisee/send/badges/master/pipeline.svg
+[release-badge]: https://img.shields.io/github/v/tag/timvisee/send
+[release-link]: https://gitlab.com/timvisee/send/-/
 [repo-license-badge]: https://img.shields.io/github/license/timvisee/send.svg
 
 A fork of Mozilla's [Firefox Send][mozilla-send].
