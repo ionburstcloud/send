@@ -10,7 +10,7 @@
 [gitlab-ci-link]: https://gitlab.com/timvisee/send/pipelines
 [gitlab-ci-master-badge]: https://gitlab.com/timvisee/send/badges/master/pipeline.svg
 [release-badge]: https://img.shields.io/github/v/tag/timvisee/send
-[release-link]: https://gitlab.com/timvisee/send/-/
+[release-link]: https://gitlab.com/timvisee/send/-/tags
 [repo-license-badge]: https://img.shields.io/github/license/timvisee/send.svg
 
 A fork of Mozilla's [Firefox Send][mozilla-send].
