@@ -53,7 +53,7 @@ function password(state) {
           id="password-input"
           class="${state.archive.password
             ? ''
-            : 'invisible'} border rounded focus:border-blue-60 leading-normal py-1 pl-2 pr-8 h-8 dark:bg-grey-80"
+            : 'invisible'} border rounded focus:border-blue-60 leading-normal my-1 py-1 px-2 h-8 dark:bg-grey-80"
           autocomplete="off"
           maxlength="${MAX_LENGTH}"
           type="password"
@@ -74,7 +74,7 @@ function password(state) {
             src="${assets.get('eye.svg')}"
             width="22"
             height="22"
-            class="m-auto"
+            class="m-auto mt-2"
           />
         </button>
       </div>
