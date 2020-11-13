@@ -36,19 +36,10 @@ module.exports = function(app) {
         defaultSrc: ["'self'"],
         connectSrc: [
           "'self'",
-          'wss://*.dev.lcip.org',
-          'wss://*.send.nonprod.cloudops.mozgcp.net',
           config.base_url.replace(/^https:\/\//, 'wss://'),
-          'https://*.dev.lcip.org',
-          'https://accounts.firefox.com',
-          'https://*.accounts.firefox.com',
-          'https://sentry.prod.mozaws.net'
         ],
         imgSrc: [
           "'self'",
-          'https://*.dev.lcip.org',
-          'https://firefoxusercontent.com',
-          'https://secure.gravatar.com'
         ],
         scriptSrc: [
           "'self'",
@@ -66,18 +57,6 @@ module.exports = function(app) {
     csp.directives.connectSrc.push(
       config.base_url.replace(/^https:\/\//, 'wss://')
     );
-    if (config.fxa_csp_oauth_url != '') {
-      csp.directives.connectSrc.push(config.fxa_csp_oauth_url);
-    }
-    if (config.fxa_csp_content_url != '') {
-      csp.directives.connectSrc.push(config.fxa_csp_content_url);
-    }
-    if (config.fxa_csp_profile_url != '') {
-      csp.directives.connectSrc.push(config.fxa_csp_profile_url);
-    }
-    if (config.fxa_csp_profileimage_url != '') {
-      csp.directives.imgSrc.push(config.fxa_csp_profileimage_url);
-    }
 
     app.use(helmet.contentSecurityPolicy(csp));
   }
