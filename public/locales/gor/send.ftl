@@ -54,7 +54,6 @@ deletePopupYes = Joo
 deletePopupCancel = Bataliya
 deleteButtonHover = Luluta
 copyUrlHover = Kupe'iya URL
-footerLinkLegal = Legal
 # Test Pilot is a proper name and should not be localized.
 footerLinkAbout = Tomimbihu Test Pilot
 changePasswordButton = Boli'a

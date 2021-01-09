@@ -1,5 +1,4 @@
 const html = require('choo/html');
-const assets = require('../../common/assets');
 
 module.exports = function intro(state) {
   return html`
@@ -13,7 +12,6 @@ module.exports = function intro(state) {
         <p class="max-w-sm leading-loose mt-6 md:mt-2 md:pr-14">
           ${state.translate('introDescription')}
         </p>
-        <img class="intro" src="${assets.get('intro.svg')}" />
       </div>
     </send-intro>
   `;

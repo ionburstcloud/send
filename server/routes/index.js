@@ -36,11 +36,9 @@ module.exports = function(app) {
         defaultSrc: ["'self'"],
         connectSrc: [
           "'self'",
-          config.base_url.replace(/^https:\/\//, 'wss://'),
+          config.base_url.replace(/^https:\/\//, 'wss://')
         ],
-        imgSrc: [
-          "'self'",
-        ],
+        imgSrc: ["'self'"],
         scriptSrc: [
           "'self'",
           function(req) {
@@ -90,7 +88,6 @@ module.exports = function(app) {
   });
   app.get('/error', language, pages.blank);
   app.get('/oauth', language, pages.blank);
-  app.get('/legal', language, pages.legal);
   app.get('/login', language, pages.index);
   app.get('/app.webmanifest', language, require('./webmanifest'));
   app.get(`/download/:id${ID_REGEX}`, language, pages.download);

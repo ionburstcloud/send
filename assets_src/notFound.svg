@@ -5,11 +5,15 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="348px"
    height="210px"
    viewBox="0 0 348 210"
    version="1.1"
-   id="svg124">
+   id="svg124"
+   sodipodi:docname="notFound.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
      id="metadata128">
     <rdf:RDF>
@@ -22,6 +26,26 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     id="namedview126"
+     showgrid="false"
+     inkscape:zoom="0.83117816"
+     inkscape:cx="-34.146598"
+     inkscape:cy="-144.04542"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg124" />
   <!-- Generator: sketchtool 53.1 (72631) - https://sketchapp.com -->
   <title
      id="title2">27A08916-26BA-4E40-BE07-5F49802F2EFC</title>

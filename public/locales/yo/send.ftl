@@ -51,13 +51,10 @@ deletePopupCancel =
 deleteButtonHover =
     Mú kúrò
     Parẹ́
-footerLinkLegal =
     b’ófin mu
     n’ílànà òfin
-footerLinkPrivacy =
     Ibi ìkọ̀kọ̀
     Ibi ìpamọ́
-footerLinkCookies =
     Cookie
     Àmì-ẹ̀rọ aránṣẹ́-jíṣẹ́
 passwordTryAgain =
