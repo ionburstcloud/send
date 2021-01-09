@@ -36,9 +36,6 @@ notSupportedOutdatedDetail = للأسف فإن إصدارة فَيَرفُكس �
 updateFirefox = حدّث فَيَرفُكس
 deletePopupCancel = ألغِ
 deleteButtonHover = احذف
-footerLinkLegal = القانونية
-footerLinkPrivacy = الخصوصية
-footerLinkCookies = الكعكات
 passwordTryAgain = كلمة السر خاطئة. أعِد المحاولة.
 javascriptRequired = يتطلب فَيَرفُكس سِنْد جافاسكربت
 whyJavascript = لماذا يتطلب فَيَرفُكس سِنْد جافاسكربت؟

@@ -28,9 +28,6 @@ notSupportedOutdatedDetail = متاسفانه این نسخه از فایرفا�
 updateFirefox = بروزرسانی فایرفاکس
 deletePopupCancel = انصراف
 deleteButtonHover = حذف
-footerLinkLegal = ملاحظات حقوقی
-footerLinkPrivacy = حریم‌خصوصی
-footerLinkCookies = کوکی‌ها
 passwordTryAgain = کلمه عبور اشتباه است. مجدد تلاش کنید.
 javascriptRequired = Send نیازمند جاوااسکریپت است
 whyJavascript = چرا Send جاوااسکریپت لازم داد؟

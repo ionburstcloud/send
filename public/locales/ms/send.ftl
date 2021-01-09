@@ -88,12 +88,9 @@ deletePopupYes = Ya
 deletePopupCancel = Batal
 deleteButtonHover = Buang
 copyUrlHover = Salin URL
-footerLinkLegal = Perundangan
 # Test Pilot is a proper name and should not be localized.
 footerLinkAbout = Perihal Ujian Perintis
-footerLinkPrivacy = Privasi
 footerLinkTerms = Terma
-footerLinkCookies = Kuki
 requirePasswordCheckbox = Perlu kata laluan untuk memuat turun fail ini
 addPasswordButton = Tambah Kata laluan
 changePasswordButton = Tukar

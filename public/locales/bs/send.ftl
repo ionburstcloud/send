@@ -92,12 +92,9 @@ deletePopupYes = Da
 deletePopupCancel = Otkaži
 deleteButtonHover = Izbriši
 copyUrlHover = Kopiraj URL
-footerLinkLegal = Pravno
 # Test Pilot is a proper name and should not be localized.
 footerLinkAbout = O Test Pilotu
-footerLinkPrivacy = Privatnost
 footerLinkTerms = Uslovi
-footerLinkCookies = Kolačići
 requirePasswordCheckbox = Zahtjevaj lozinku za preuzimanje ove datoteke
 addPasswordButton = Dodaj lozinku
 changePasswordButton = Promijeni
