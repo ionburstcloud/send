@@ -170,11 +170,6 @@ footer li:hover {
   width: auto;
 }
 
-.intro {
-  max-width: 100%;
-  height: unset;
-}
-
 .main {
   display: flex;
   position: relative;
@@ -267,13 +262,6 @@ select {
   .main-header img {
     height: 48px;
     width: auto;
-  }
-
-  .intro {
-    max-width: unset;
-    height: unset;
-    margin-bottom: -3rem;
-    margin-right: -7rem;
   }
 
   .main {
