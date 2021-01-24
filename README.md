@@ -68,7 +68,7 @@ Thanks [Mozilla][mozilla] for building this amazing tool!
 * [Contributing](#contributing)
 * [Testing](#testing)
 * [Deployment](#deployment)
-* [Android](#android)
+* [Clients](#clients)
 * [License](#license)
 
 ---
@@ -149,9 +149,18 @@ see also [docs/deployment.md](docs/deployment.md)
 
 ---
 
-## Android
+## Clients
 
-The android implementation is contained in the `android` directory, and can be viewed locally for easy testing and editing by running `ANDROID=1 npm start` and then visiting <http://localhost:8080>. CSS and image files are located in the `android/app/src/main/assets` directory.
+- Web: _this repository_
+- Command-line: [`ffsend`](https://github.com/timvisee/ffsend)
+- Android: _see [Android](#android) section_
+
+#### Android
+
+The android implementation is contained in the `android` directory,
+and can be viewed locally for easy testing and editing by running `ANDROID=1 npm
+start` and then visiting <http://localhost:8080>. CSS and image files are
+located in the `android/app/src/main/assets` directory.
 
 ---
 
