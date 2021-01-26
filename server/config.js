@@ -194,6 +194,26 @@ const conf = convict({
     format: String,
     default: '',
     env: 'IP_DB'
+  },
+  footer_donate_url: {
+    format: String,
+    default: '',
+    env: 'SEND_FOOTER_DONATE_URL'
+  },
+  footer_cli_url: {
+    format: String,
+    default: 'https://github.com/timvisee/ffsend',
+    env: 'SEND_FOOTER_CLI_URL'
+  },
+  footer_dmca_url: {
+    format: String,
+    default: '',
+    env: 'SEND_FOOTER_DMCA_URL'
+  },
+  footer_source_url: {
+    format: String,
+    default: 'https://github.com/timvisee/send',
+    env: 'SEND_FOOTER_CLI_URL'
   }
 });
 

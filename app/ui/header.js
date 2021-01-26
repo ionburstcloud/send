@@ -16,6 +16,7 @@ class Header extends Component {
     this.account.render();
     return false;
   }
+
   createElement() {
     const title =
       platform() === 'android'

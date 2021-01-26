@@ -51,6 +51,7 @@ if (process.env.NODE_ENV === 'production') {
   window.initialState = {
     LIMITS,
     DEFAULTS,
+    WEB_UI,
     PREFS,
     archive: new Archive([], DEFAULTS.EXPIRE_SECONDS),
     capabilities,

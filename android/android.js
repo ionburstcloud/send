@@ -69,9 +69,10 @@ function body(main) {
 (async function start() {
   const translate = await getTranslator('en-US');
   setTranslate(translate);
-  const { LIMITS, DEFAULTS } = await getConstants();
+  const { LIMITS, WEB_UI, DEFAULTS } = await getConstants();
   app.use(state => {
     state.LIMITS = LIMITS;
+    state.WEB_UI = WEB_UI;
     state.DEFAULTS = DEFAULTS;
     state.translate = translate;
     state.capabilities = {
