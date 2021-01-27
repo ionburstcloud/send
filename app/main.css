@@ -134,7 +134,7 @@ details[open] > summary > svg {
   transform: rotate(90deg);
 }
 
-footer li:hover {
+footer li a:hover {
   text-decoration: underline;
 }
 
