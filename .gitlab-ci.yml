@@ -1,4 +1,4 @@
-image: "node:12-slim"
+image: "node:15-slim"
 
 stages:
   - test
