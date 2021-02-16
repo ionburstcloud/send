@@ -64,10 +64,10 @@
     "node": "^15.5.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.13",
+    "@babel/core": "^7.12.16",
     "@babel/plugin-proposal-class-properties": "^7.12.13",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-env": "^7.12.16",
     "@dannycoates/webcrypto-liner": "^0.1.37",
     "@fullhuman/postcss-purgecss": "^1.3.0",
     "@mattiasbuelens/web-streams-polyfill": "0.2.1",
@@ -117,7 +117,7 @@
     "script-loader": "^0.7.2",
     "sinon": "^7.5.0",
     "string-hash": "^1.1.3",
-    "stylelint": "^13.9.0",
+    "stylelint": "^13.10.0",
     "stylelint-config-standard": "^19.0.0",
     "stylelint-no-unsupported-browser-features": "^4.1.4",
     "svgo": "^1.3.2",
@@ -137,7 +137,7 @@
     "@fluent/langneg": "^0.3.0",
     "@google-cloud/storage": "^5.7.4",
     "@sentry/node": "^5.30.0",
-    "aws-sdk": "^2.838.0",
+    "aws-sdk": "^2.844.0",
     "body-parser": "^1.19.0",
     "choo": "^7.0.0",
     "cldr-core": "^35.1.0",
@@ -151,7 +151,7 @@
     "redis": "^2.8.0",
     "redis-mock": "^0.47.0",
     "selenium-standalone": "^6.23.0",
-    "ua-parser-js": "^0.7.23"
+    "ua-parser-js": "^0.7.24"
   },
   "availableLanguages": [
     "en-US",
