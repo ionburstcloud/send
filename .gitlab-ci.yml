@@ -33,13 +33,14 @@ artifact-docker:
   services:
     - docker:dind
   variables:
-    IMG_FILE: "send:git-$CI_COMMIT_SHA.tar"
-    IMG_NAME: "send:git-$CI_COMMIT_SHA"
+    IMG_FILE: "send:git-$CI_COMMIT_SHORT_SHA.tar"
+    IMG_NAME: "send:git-$CI_COMMIT_SHORT_SHA"
   before_script: []
   script:
     - docker build -t $IMG_NAME .
     - docker image save -o $IMG_FILE $IMG_NAME
   artifacts:
+    name: artifact-docker
     paths:
       - $IMG_FILE
     expire_in: 1 week
@@ -55,9 +56,9 @@ release-docker-master:
   only:
     - master
   variables:
-    IMG_IMPORT_FILE: "send:git-$CI_COMMIT_SHA.tar"
-    IMG_IMPORT_NAME: "send:git-$CI_COMMIT_SHA"
-    IMG_NAME: "registry.gitlab.com/timvisee/send:master-$CI_COMMIT_SHA"
+    IMG_IMPORT_FILE: "send:git-$CI_COMMIT_SHORT_SHA.tar"
+    IMG_IMPORT_NAME: "send:git-$CI_COMMIT_SHORT_SHA"
+    IMG_NAME: "registry.gitlab.com/timvisee/send:master-$CI_COMMIT_SHORT_SHA"
   before_script: []
   script:
     # Login in to registry
@@ -83,8 +84,8 @@ release-docker:
   only:
     - /^v(\d+\.)*\d+$/
   variables:
-    IMG_IMPORT_FILE: "send:git-$CI_COMMIT_SHA.tar"
-    IMG_IMPORT_NAME: "send:git-$CI_COMMIT_SHA"
+    IMG_IMPORT_FILE: "send:git-$CI_COMMIT_SHORT_SHA.tar"
+    IMG_IMPORT_NAME: "send:git-$CI_COMMIT_SHORT_SHA"
     IMG_NAME: "registry.gitlab.com/timvisee/send:$CI_COMMIT_REF_NAME"
     IMG_NAME_LATEST: "registry.gitlab.com/timvisee/send:latest"
   before_script: []
