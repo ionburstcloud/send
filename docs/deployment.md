@@ -40,6 +40,7 @@ Of course, we don't want to expose the service on port 1443. Instead we want our
 * a2enmod proxy
 * a2enmod proxy_http
 * a2enmod proxy_wstunnel
+* a2enmod rewrite
 
 In your Apache virtual host configuration file, insert this:
 
