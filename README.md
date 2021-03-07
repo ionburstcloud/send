@@ -66,7 +66,6 @@ Thanks [Mozilla][mozilla] for building this amazing tool!
 * [Configuration](#configuration)
 * [Localization](#localization)
 * [Contributing](#contributing)
-* [Testing](#testing)
 * [Deployment](#deployment)
 * [Clients](#clients)
 * [License](#license)
@@ -130,16 +129,6 @@ see also [docs/localization.md](docs/localization.md)
 ## Contributing
 
 Pull requests are always welcome! Feel free to check out the list of ["good first issues"](https://github.com/mozilla/send/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
-
----
-
-## Testing
-
-| ENVIRONMENT | URL
-|-------------|-----
-| Production  | <https://send.firefox.com/>
-| Stage       | <https://stage.send.nonprod.cloudops.mozgcp.net/>
-| Development | <https://send2.dev.lcip.org/>
 
 ---
 
