@@ -91,9 +91,6 @@ export default function(state, emitter) {
         state.LIMITS.MAX_FILES_PER_ARCHIVE
       );
     } catch (e) {
-      if (e.message === 'fileTooBig' && maxSize < state.LIMITS.MAX_FILE_SIZE) {
-        return emitter.emit('signup-cta', 'size');
-      }
       state.modal = okDialog(
         state.translate(e.message, {
           size: bytes(maxSize),
