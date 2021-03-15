@@ -1,4 +1,3 @@
-import * as metrics from './metrics';
 import FileReceiver from './fileReceiver';
 import FileSender from './fileSender';
 import copyDialog from './ui/copyDialog';
@@ -54,7 +53,6 @@ export default function(state, emitter) {
 
   emitter.on('logout', async () => {
     await state.user.logout();
-    metrics.loggedOut({ trigger: 'button' });
     emitter.emit('pushState', '/');
   });
 
@@ -68,14 +66,6 @@ export default function(state, emitter) {
 
   emitter.on('delete', async ownedFile => {
     try {
-      metrics.deletedUpload({
-        size: ownedFile.size,
-        time: ownedFile.time,
-        speed: ownedFile.speed,
-        type: ownedFile.type,
-        ttl: ownedFile.expiresAt - Date.now(),
-        location
-      });
       state.storage.remove(ownedFile.id);
       await ownedFile.del();
     } catch (e) {
@@ -123,7 +113,7 @@ export default function(state, emitter) {
       source: query.utm_source,
       term: query.utm_term
     });
-    state.modal = signupDialog(source);
+    state.modal = signupDialog();
     render();
   });
 
@@ -159,12 +149,9 @@ export default function(state, emitter) {
 
     const links = openLinksInNewTab();
     await delay(200);
-    const start = Date.now();
     try {
       const ownedFile = await sender.upload(archive, state.user.bearerToken);
       state.storage.totalUploads += 1;
-      const duration = Date.now() - start;
-      metrics.completedUpload(archive, duration);
       faviconProgressbar.updateFavicon(0);
 
       state.storage.addFile(ownedFile);
@@ -181,7 +168,6 @@ export default function(state, emitter) {
     } catch (err) {
       if (err.message === '0') {
         //cancelled. do nothing
-        metrics.cancelledUpload(archive, err.duration);
         render();
       } else if (err.message === '401') {
         const refreshed = await state.user.refresh();
@@ -197,7 +183,6 @@ export default function(state, emitter) {
           scope.setExtra('size', err.size);
           state.sentry.captureException(err);
         });
-        metrics.stoppedUpload(archive, err.duration);
         emitter.emit('pushState', '/error');
       }
     } finally {
@@ -249,13 +234,11 @@ export default function(state, emitter) {
     render();
   });
 
-  emitter.on('download', async file => {
+  emitter.on('download', async () => {
     state.transfer.on('progress', updateProgress);
     state.transfer.on('decrypting', render);
     state.transfer.on('complete', render);
     const links = openLinksInNewTab();
-    const size = file.size;
-    const start = Date.now();
     try {
       const dl = state.transfer.download({
         stream: state.capabilities.streamDownload
@@ -263,12 +246,6 @@ export default function(state, emitter) {
       render();
       await dl;
       state.storage.totalDownloads += 1;
-      const duration = Date.now() - start;
-      metrics.completedDownload({
-        size,
-        duration,
-        password_protected: file.requiresPassword
-      });
       faviconProgressbar.updateFavicon(0);
     } catch (err) {
       if (err.message === '0') {
@@ -286,12 +263,6 @@ export default function(state, emitter) {
             scope.setExtra('progress', err.progress);
             state.sentry.captureException(err);
           });
-          const duration = Date.now() - start;
-          metrics.stoppedDownload({
-            size,
-            duration,
-            password_protected: file.requiresPassword
-          });
         }
         emitter.emit('pushState', location);
       }
@@ -302,7 +273,6 @@ export default function(state, emitter) {
 
   emitter.on('copy', ({ url }) => {
     copyToClipboard(url);
-    // metrics.copiedLink({ location });
   });
 
   emitter.on('closeModal', () => {

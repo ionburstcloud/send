@@ -420,17 +420,6 @@ export async function setFileList(bearerToken, kid, data) {
   return response.ok;
 }
 
-export function sendMetrics(blob) {
-  if (!navigator.sendBeacon) {
-    return;
-  }
-  try {
-    navigator.sendBeacon(getApiUrl('/api/metrics'), blob);
-  } catch (e) {
-    console.error(e);
-  }
-}
-
 export async function getConstants() {
   const response = await fetch(getApiUrl('/config'));
 

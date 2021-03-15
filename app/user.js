@@ -109,27 +109,8 @@ export default class User {
   async startAuthFlow(trigger, utms = {}) {
     this.utms = utms;
     this.trigger = trigger;
-    try {
-      const params = new URLSearchParams({
-        entrypoint: `send-${trigger}`,
-        form_type: 'email',
-        utm_source: utms.source || 'send',
-        utm_campaign: utms.campaign || 'none'
-      });
-      const res = await fetch(
-        `${this.authConfig.issuer}/metrics-flow?${params.toString()}`,
-        {
-          mode: 'cors'
-        }
-      );
-      const { flowId, flowBeginTime } = await res.json();
-      this.flowId = flowId;
-      this.flowBeginTime = flowBeginTime;
-    } catch (e) {
-      console.error(e);
-      this.flowId = null;
-      this.flowBeginTime = null;
-    }
+    this.flowId = null;
+    this.flowBeginTime = null;
   }
 
   async login(email) {

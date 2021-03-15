@@ -10,7 +10,6 @@ import controller from './controller';
 import dragManager from './dragManager';
 import pasteManager from './pasteManager';
 import storage from './storage';
-import metrics from './metrics';
 import experiments from './experiments';
 import * as Sentry from '@sentry/browser';
 import './main.css';
@@ -68,7 +67,6 @@ if (process.env.NODE_ENV === 'production') {
   // eslint-disable-next-line require-atomic-updates
   window.app = app;
   app.use(experiments);
-  app.use(metrics);
   app.use(controller);
   app.use(dragManager);
   app.use(pasteManager);

@@ -4,7 +4,6 @@ import html from 'choo/html';
 import * as Sentry from '@sentry/browser';
 
 import { setApiUrlPrefix, getConstants } from '../app/api';
-import metrics from '../app/metrics';
 //import assets from '../common/assets';
 import Archive from '../app/archive';
 import Header from '../app/ui/header';
@@ -83,7 +82,6 @@ function body(main) {
     state.user = new User(storage, LIMITS);
     state.sentry = Sentry;
   });
-  app.use(metrics);
   app.route('/', body(home));
   app.route('/upload', upload);
   app.route('/share/:id', share);
