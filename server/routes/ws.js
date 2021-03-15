@@ -4,7 +4,6 @@ const config = require('../config');
 const mozlog = require('../log');
 const Limiter = require('../limiter');
 const fxa = require('../fxa');
-const { statUploadEvent } = require('../amplitude');
 const { encryptedSize } = require('../../app/utils');
 
 const { Transform } = require('stream');
@@ -108,18 +107,6 @@ module.exports = function(ws, req) {
         // in order to avoid having to check socket state and clean
         // up storage, possibly with an exception that we can catch.
         ws.send(JSON.stringify({ ok: true }));
-        statUploadEvent({
-          id: newId,
-          ip: req.ip,
-          country: req.geo.country,
-          state: req.geo.state,
-          owner,
-          dlimit,
-          timeLimit,
-          anonymous: !user,
-          size: limiter.length,
-          agent: req.ua.browser.name || req.ua.ua.substring(0, 6)
-        });
       }
     } catch (e) {
       log.error('upload', e);

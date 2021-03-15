@@ -100,7 +100,7 @@ module.exports = function(state, emit) {
         );
         break;
       case 'download':
-        emit('download', archive);
+        emit('download');
         break;
     }
     return false;

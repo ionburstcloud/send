@@ -580,7 +580,7 @@ module.exports.preview = function(state, emit) {
   function download(event) {
     event.preventDefault();
     event.target.disabled = true;
-    emit('download', archive);
+    emit('download');
   }
 };
 
