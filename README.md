@@ -66,6 +66,7 @@ Thanks [Mozilla][mozilla] for building this amazing tool!
 * [Configuration](#configuration)
 * [Localization](#localization)
 * [Contributing](#contributing)
+* [Instances](#instances)
 * [Deployment](#deployment)
 * [Clients](#clients)
 * [License](#license)
@@ -132,9 +133,15 @@ Pull requests are always welcome! Feel free to check out the list of ["good firs
 
 ---
 
+## Instances
+
+Find a list of public instances here: https://github.com/timvisee/send-instances/
+
+---
+
 ## Deployment
 
-see also [docs/deployment.md](docs/deployment.md)
+See also [docs/deployment.md](docs/deployment.md)
 
 ---
 
