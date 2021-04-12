@@ -81,21 +81,15 @@ export default class User {
   }
 
   get maxSize() {
-    return this.loggedIn
-      ? this.limits.MAX_FILE_SIZE
-      : this.limits.ANON.MAX_FILE_SIZE;
+    return this.limits.MAX_FILE_SIZE;
   }
 
   get maxExpireSeconds() {
-    return this.loggedIn
-      ? this.limits.MAX_EXPIRE_SECONDS
-      : this.limits.ANON.MAX_EXPIRE_SECONDS;
+    return this.limits.MAX_EXPIRE_SECONDS;
   }
 
   get maxDownloads() {
-    return this.loggedIn
-      ? this.limits.MAX_DOWNLOADS
-      : this.limits.ANON.MAX_DOWNLOADS;
+    return this.limits.MAX_DOWNLOADS;
   }
 
   async metricId() {

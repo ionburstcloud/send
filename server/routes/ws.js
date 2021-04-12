@@ -30,15 +30,9 @@ module.exports = function(ws, req) {
       const metadata = fileInfo.fileMetadata;
       const auth = fileInfo.authorization;
       const user = await fxa.verify(fileInfo.bearer);
-      const maxFileSize = user
-        ? config.max_file_size
-        : config.anon_max_file_size;
-      const maxExpireSeconds = user
-        ? config.max_expire_seconds
-        : config.anon_max_expire_seconds;
-      const maxDownloads = user
-        ? config.max_downloads
-        : config.anon_max_downloads;
+      const maxFileSize = config.max_file_size;
+      const maxExpireSeconds = config.max_expire_seconds;
+      const maxDownloads = config.max_downloads;
 
       if (config.fxa_required && !user) {
         ws.send(
