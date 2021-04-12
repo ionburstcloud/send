@@ -29,7 +29,7 @@ class File {
     const v = new DataView(h);
     v.setUint32(0, 0x04034b50, true); // sig
     v.setUint16(4, 20, true); // version
-    v.setUint16(6, 8, true); // bit flags (8 = use data descriptor)
+    v.setUint16(6, 2056, true); // bit flags (2056 = use data descriptor(8) + utf8-encoded(2048))
     v.setUint16(8, 0, true); // compression
     v.setUint16(10, this.dateTime.time, true); // modified time
     v.setUint16(12, this.dateTime.date, true); // modified date
