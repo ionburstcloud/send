@@ -64,6 +64,16 @@ const conf = convict({
     default: 'localhost',
     env: 'REDIS_HOST'
   },
+  redis_port: {
+    format: Number,
+    default: 6379,
+    env: 'REDIS_PORT'
+  },
+  redis_password: {
+    format: String,
+    default: '',
+    env: 'REDIS_PASSWORD'
+  },
   redis_event_expire: {
     format: Boolean,
     default: false,
