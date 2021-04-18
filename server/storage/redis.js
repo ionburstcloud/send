@@ -10,6 +10,8 @@ module.exports = function(config) {
   const redis = require(redis_lib);
   const client = redis.createClient({
     host: config.redis_host,
+    port: config.redis_port,
+    password: config.redis_password,
     retry_strategy: options => {
       if (options.total_retry_time > config.redis_retry_time) {
         client.emit('error', 'Retry time exhausted');
