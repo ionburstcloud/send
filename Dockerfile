@@ -6,7 +6,7 @@
 
 
 # Build project
-FROM node:15.5.1-alpine AS builder
+FROM node:current-alpine AS builder
 RUN set -x \
     # Add user
     && addgroup --gid 10001 app \
@@ -26,7 +26,7 @@ RUN set -x \
 
 
 # Main image
-FROM node:15.5.1-alpine
+FROM node:current-alpine
 RUN set -x \
     # Add user
     && addgroup --gid 10001 app \
