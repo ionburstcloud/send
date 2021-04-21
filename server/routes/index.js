@@ -38,7 +38,7 @@ module.exports = function(app) {
           "'self'",
           config.base_url.replace(/^https:\/\//, 'wss://')
         ],
-        imgSrc: ["'self'"],
+        imgSrc: ["'self'", "data:"],
         scriptSrc: [
           "'self'",
           function(req) {
