@@ -118,7 +118,7 @@ details {
   overflow: hidden;
 }
 
-details > summary::-webkit-details-marker {
+details > summary::marker {
   display: none;
 }
 
