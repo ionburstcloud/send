@@ -13,7 +13,7 @@ For Debian/Ubuntu systems this probably just means something like this:
 ## Building
 * We assume an already configured virtual-host on your webserver with an existing empty htdocs folder
 * First, remove that htdocs folder - we will replace it with Send's version now
-* git clone https://github.com/mozilla/send.git htdocs
+* git clone https://github.com/timvisee/send.git htdocs
 * Make now sure you are NOT root but rather the user your webserver is serving files under (e.g. "su www-data" or whoever the owner of your htdocs folder is)
 * npm install
 * npm run build
