@@ -130,6 +130,11 @@ const conf = convict({
     default: 'https://send.firefox.com',
     env: 'BASE_URL'
   },
+  detect_base_url: {
+    format: Boolean,
+    default: false,
+    env: 'DETECT_BASE_URL'
+  },
   file_dir: {
     format: 'String',
     default: `${tmpdir()}${path.sep}send-${randomBytes(4).toString('hex')}`,
@@ -206,4 +211,18 @@ const conf = convict({
 conf.validate({ allowed: 'strict' });
 
 const props = conf.getProperties();
-module.exports = props;
+
+const deriveBaseUrl = (req) => {
+  if (props.detect_base_url) {
+    const protocol = req.secure ? 'https://' : 'http://';
+
+    return `${protocol}${req.headers.host}`;
+  } else {
+    return props.base_url;
+  }
+};
+
+module.exports = {
+  ...props,
+  deriveBaseUrl,
+};
