@@ -28,7 +28,7 @@ notSupportedOutdatedDetail = Helaas ondersteunt deze versie van Firefox de webte
 updateFirefox = Firefox bijwerken
 deletePopupCancel = Annuleren
 deleteButtonHover = Verwijderen
-footerText = Niet aangesloten aan Mozilla of Firefox.
+footerText = Niet gelieerd aan Mozilla of Firefox.
 footerLinkDonate = Doneren
 footerLinkCli = CLI
 footerLinkDmca = DMCA
@@ -52,7 +52,7 @@ passwordSetError = Dit wachtwoord kon niet worden ingesteld
 -send-short-brand = Send
 -firefox = Firefox
 -mozilla = Mozilla
-introTitle = Eenvoudig, privé bestanden delen
+introTitle = Bestanden delen, eenvoudig en privé 
 introDescription = Met { -send-brand } kunt u bestanden delen met end-to-endversleuteling en een koppeling die automatisch verloopt. Hierdoor kunt u privé houden wat u wilt delen en er zeker van zijn dat uw zaken niet voor altijd online blijven.
 notifyUploadEncryptDone = Uw bestand is versleuteld en klaar voor verzending
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
