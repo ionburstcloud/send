@@ -23,6 +23,7 @@ module.exports = async function(req) {
   if (config.survey_url) {
     prefs.surveyUrl = config.survey_url;
   }
+  const baseUrl = config.deriveBaseUrl(req);
   return {
     archive: {
       numFiles: 0
@@ -33,7 +34,7 @@ module.exports = async function(req) {
     title: 'Send',
     description:
       'Encrypt and send files with a link that automatically expires to ensure your important documents don’t stay online forever.',
-    baseUrl: config.base_url,
+    baseUrl,
     ui: {},
     storage: {
       files: []
