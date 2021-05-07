@@ -65,8 +65,7 @@ module.exports = function(ws, req) {
         nonce: crypto.randomBytes(16).toString('base64')
       };
 
-      const protocol = config.env === 'production' ? 'https' : req.protocol;
-      const url = `${protocol}://${req.get('host')}/download/${newId}/`;
+      const url = `${config.deriveBaseUrl(req)}/download/${newId}/`;
 
       ws.send(
         JSON.stringify({
