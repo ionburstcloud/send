@@ -212,17 +212,16 @@ conf.validate({ allowed: 'strict' });
 
 const props = conf.getProperties();
 
-const deriveBaseUrl = (req) => {
-  if (props.detect_base_url) {
-    const protocol = req.secure ? 'https://' : 'http://';
-
-    return `${protocol}${req.headers.host}`;
-  } else {
+const deriveBaseUrl = req => {
+  if (!props.detect_base_url) {
     return props.base_url;
   }
+
+  const protocol = req.secure ? 'https://' : 'http://';
+  return `${protocol}${req.headers.host}`;
 };
 
 module.exports = {
   ...props,
-  deriveBaseUrl,
+  deriveBaseUrl
 };
