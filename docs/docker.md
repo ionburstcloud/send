@@ -58,13 +58,13 @@ Pick how you want to store uploaded files and set these config options according
 
 - Local filesystem (the default): set `FILE_DIR` to the local path used inside the container for storage (or leave the default)
 - S3-compatible object store: set `S3_BUCKET`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` (and `S3_ENDPOINT` if using something other than AWS)
-- Google Cloud Storage: set `GCS_BUCKET` to the name of a GCS bucket (auth should be set up using [Application Default Credentials](https://cloud.google.com/docs/authentication/production#auth-cloud-implicit-nodejs)) 
+- Google Cloud Storage: set `GCS_BUCKET` to the name of a GCS bucket (auth should be set up using [Application Default Credentials](https://cloud.google.com/docs/authentication/production#auth-cloud-implicit-nodejs))
 
 Redis is used as the metadata database for the backend and is required no matter which storage method you use.
 
 | Name  | Description |
 |------------------|-------------|
-| `REDIS_HOST`, `REDIS_PORT`, `REDIS_PASSWORD` | Host name, port, and pass of the Redis server (defaults to `localhost`, `6379`, and no password)
+| `REDIS_HOST`, `REDIS_PORT`, `REDIS_USER`, `REDIS_PASSWORD`, `REDIS_DB` | Host name, port, and pass of the Redis server (defaults to `localhost`, `6379`, and no password)
 | `FILE_DIR`       | Directory for storage inside the Docker container (defaults to `/uploads`)
 | `S3_BUCKET`  | The S3 bucket name to use (only set if using S3 for storage)
 | `S3_ENDPOINT` | An optional custom endpoint to use for S3 (defaults to AWS)

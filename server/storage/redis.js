@@ -21,8 +21,12 @@ module.exports = function(config) {
       return config.redis_retry_delay;
     }
   };
+  if (config.redis_user != null && config.redis_user.length > 0)
+    client_config.user = config.redis_user;
   if (config.redis_password != null && config.redis_password.length > 0)
     client_config.password = config.redis_password;
+  if (config.redis_db != null && config.redis_db.length > 0)
+    client_config.db = config.redis_db;
   const client = redis.createClient(client_config);
 
   client.ttlAsync = promisify(client.ttl);

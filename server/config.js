@@ -89,10 +89,20 @@ const conf = convict({
     default: 6379,
     env: 'REDIS_PORT'
   },
+  redis_user: {
+    format: String,
+    default: '',
+    env: 'REDIS_USER'
+  },
   redis_password: {
     format: String,
     default: '',
     env: 'REDIS_PASSWORD'
+  },
+  redis_db: {
+    format: String,
+    default: '',
+    env: 'REDIS_DB'
   },
   redis_event_expire: {
     format: Boolean,
