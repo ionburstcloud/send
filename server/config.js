@@ -11,8 +11,9 @@ convict.addFormat({
         throw new Error('must be a comma-separated list of positive integers')
     }
   },
-  coerce: (ints_str, schema) => {
-      return ints_str.trim().split(',').map(int_str => parseInt(int_str.trim(), 10))
+  coerce: (ints, schema) => {
+      const ints_arr = Array.isArray(ints_str) ? ints : ints.trim().split(',')
+      return ints_arr.map(int => (typeof int === 'number') ? int : parseInt(int.trim(), 10))
   },
 });
 
