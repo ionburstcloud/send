@@ -195,7 +195,7 @@ Lower files and folders permissions to user and group `www-data`:
 ```
 sudo find /var/www/send -type d -exec chmod 750 {} \;
 sudo find /var/www/send -type f -exec chmod 640 {} \;
-sudo chmod 750 /var/www/send/node_modules/.bin/*
+sudo find -L /var/www/send/node_modules/.bin/ -exec chmod 750 {} \;
 ```
 
 ### Systemd
