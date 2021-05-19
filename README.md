@@ -121,7 +121,7 @@ The server is configured with environment variables. See [server/config.js](serv
 
 ## Localization
 
-see [docs/localization.md](docs/localization.md)
+See: [docs/localization.md](docs/localization.md)
 
 ---
 
@@ -139,9 +139,11 @@ Find a list of public instances here: https://github.com/timvisee/send-instances
 
 ## Deployment
 
-See also [docs/deployment.md](docs/deployment.md)
+See: [docs/deployment.md](docs/deployment.md)
 
-AWS example using Ubuntu Server `20.04` [docs/AWS.md](docs/AWS.md)
+Docker quickstart: [docs/docker.md](docs/docker.md)
+
+AWS example using Ubuntu Server `20.04`: [docs/AWS.md](docs/AWS.md)
 
 ---
 
