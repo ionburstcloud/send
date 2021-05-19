@@ -81,7 +81,7 @@ A file sharing experiment which allows you to send encrypted files to other user
 
 ## Requirements
 
-- [Node.js 12.x](https://nodejs.org/)
+- [Node.js 15.x](https://nodejs.org/)
 - [Redis server](https://redis.io/) (optional for development)
 - [AWS S3](https://aws.amazon.com/s3/) or compatible service (optional)
 
@@ -140,6 +140,8 @@ Find a list of public instances here: https://github.com/timvisee/send-instances
 ## Deployment
 
 See also [docs/deployment.md](docs/deployment.md)
+
+AWS example using Ubuntu Server `20.04` [docs/AWS.md](docs/AWS.md)
 
 ---
 
