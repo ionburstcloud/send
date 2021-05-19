@@ -23,10 +23,10 @@ Send uses JavaScript to:
 
 - Encrypt and decrypt files locally on the client instead of the server.
 - Render the user interface.
-- Manage translations on the website into [various different languages](https://github.com/mozilla/send#localization).
+- Manage translations on the website into [various different languages](https://github.com/timvisee/send#localization).
 - Collect data to help us improve Send in accordance with our [Terms & Privacy](https://send.firefox.com/legal).
 
-Since Send is an open source project, you can see all of the cool ways we use JavaScript by [examining our code](https://github.com/mozilla/send/).
+Since Send is an open source project, you can see all of the cool ways we use JavaScript by [examining our code](https://github.com/timvisee/send/).
 
 ## How long are files available for?
 
