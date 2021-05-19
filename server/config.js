@@ -5,19 +5,22 @@ const { randomBytes } = require('crypto');
 
 convict.addFormat({
   name: 'positive-int-array',
-  coerce: (ints, schema) => {        // can take: int[] | string[] | string (csv), returns -> int[]
-      const ints_arr = Array.isArray(ints) ? ints : ints.trim().split(',')
-      return ints_arr.map(int =>
-        (typeof int === 'number')
-          ? int
-          : parseInt(int.trim(), 10))
+  coerce: ints => {
+    // can take: int[] | string[] | string (csv), returns -> int[]
+    const ints_arr = Array.isArray(ints) ? ints : ints.trim().split(',');
+    return ints_arr.map(int =>
+      typeof int === 'number'
+        ? int
+        : parseInt(int.replace(/['"]+/g, '').trim(), 10)
+    );
   },
-  validate: (ints, schema) => {      // takes: int[], errors if any NaNs, negatives, or floats present
+  validate: ints => {
+    // takes: int[], errors if any NaNs, negatives, or floats present
     for (const int of ints) {
-      if (typeof(int) !== 'number' || isNaN(int) || int < 0 || int % 1 > 0)
-        throw new Error('must be a comma-separated list of positive integers')
+      if (typeof int !== 'number' || isNaN(int) || int < 0 || int % 1 > 0)
+        throw new Error('must be a comma-separated list of positive integers');
     }
-  },
+  }
 });
 
 const conf = convict({
