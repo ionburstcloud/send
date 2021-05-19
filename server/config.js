@@ -3,6 +3,18 @@ const { tmpdir } = require('os');
 const path = require('path');
 const { randomBytes } = require('crypto');
 
+convict.addFormat({
+  name: 'positive-int-array',
+  validate: (ints, schema) => {
+    ints.forEach(int => {
+     if (isNaN(int) || int < 0)
+        throw new Error('must be a comma-separated list of positive integers')
+    })
+  },
+  coerce: (ints_str, schema) =>
+      ints_str.trim().split(',').map(int_str => parseInt(int_str.trim(), 10))
+});
+
 const conf = convict({
   s3_bucket: {
     format: String,
@@ -25,7 +37,7 @@ const conf = convict({
     env: 'GCS_BUCKET'
   },
   expire_times_seconds: {
-    format: Array,
+    format: 'positive-int-array',
     default: [300, 3600, 86400, 604800],
     env: 'EXPIRE_TIMES_SECONDS'
   },
@@ -40,7 +52,7 @@ const conf = convict({
     env: 'MAX_EXPIRE_SECONDS'
   },
   download_counts: {
-    format: Array,
+    format: 'positive-int-array',
     default: [1, 2, 3, 4, 5, 20, 50, 100],
     env: 'DOWNLOAD_COUNTS'
   },
