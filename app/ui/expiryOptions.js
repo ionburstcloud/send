@@ -35,8 +35,7 @@ module.exports = function(state, emit) {
         state.archive.dlimit = selected;
         emit('render');
         if (selected > parseInt(state.user.maxDownloads || '0')) {
-          console.log('Chosen max download count is larger than the allowed limit for anonymous users', selected)
-          emit('signup-cta', 'count');
+          console.log('Chosen max download count is larger than the allowed limit', selected)
         }
       },
       'expire-after-dl-count-select'
@@ -62,8 +61,7 @@ module.exports = function(state, emit) {
         state.archive.timeLimit = selected;
         emit('render');
         if (selected > parseInt(state.user.maxExpireSeconds || '0')) {
-          console.log('Chosen download expiration is larger than the allowed limit for anonymous users', selected)
-          emit('signup-cta', 'time');
+          console.log('Chosen download expiration is larger than the allowed limit', selected)
         }
       },
       'expire-after-time-select'
