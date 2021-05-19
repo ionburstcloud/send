@@ -6,13 +6,14 @@ const { randomBytes } = require('crypto');
 convict.addFormat({
   name: 'positive-int-array',
   validate: (ints, schema) => {
-    ints.forEach(int => {
-     if (isNaN(int) || int < 0)
+    for (const int of ints) {
+      if (isNaN(int) || int < 0)
         throw new Error('must be a comma-separated list of positive integers')
-    })
+    }
   },
-  coerce: (ints_str, schema) =>
-      ints_str.trim().split(',').map(int_str => parseInt(int_str.trim(), 10))
+  coerce: (ints_str, schema) => {
+      return ints_str.trim().split(',').map(int_str => parseInt(int_str.trim(), 10))
+  },
 });
 
 const conf = convict({
