@@ -31,12 +31,12 @@ module.exports = function(state, emit) {
       counts,
       num => state.translate('downloadCount', { num }),
       value => {
-        const max = state.user.maxDownloads;
-        state.archive.dlimit = Math.min(value, max);
-        if (value > max) {
+        const selected = parseInt(value);
+        state.archive.dlimit = selected;
+        emit('render');
+        if (selected > parseInt(state.user.maxDownloads || '0')) {
+          console.log('Chosen max download count is larger than the allowed limit for anonymous users', selected)
           emit('signup-cta', 'count');
-        } else {
-          emit('render');
         }
       },
       'expire-after-dl-count-select'
@@ -58,12 +58,12 @@ module.exports = function(state, emit) {
         return state.translate(l10n.id, l10n);
       },
       value => {
-        const max = state.user.maxExpireSeconds;
-        state.archive.timeLimit = Math.min(value, max);
-        if (value > max) {
+        const selected = parseInt(value);
+        state.archive.timeLimit = selected;
+        emit('render');
+        if (selected > parseInt(state.user.maxExpireSeconds || '0')) {
+          console.log('Chosen download expiration is larger than the allowed limit for anonymous users', selected)
           emit('signup-cta', 'time');
-        } else {
-          emit('render');
         }
       },
       'expire-after-time-select'
