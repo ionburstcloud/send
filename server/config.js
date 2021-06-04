@@ -64,6 +64,11 @@ const conf = convict({
     default: [1, 2, 3, 4, 5, 20, 50, 100],
     env: 'DOWNLOAD_COUNTS'
   },
+  default_downloads: {
+    format: Number,
+    default: 1,
+    env: 'DEFAULT_DOWNLOADS'
+  },
   max_downloads: {
     format: Number,
     default: 100,
