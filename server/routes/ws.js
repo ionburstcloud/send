@@ -26,7 +26,7 @@ module.exports = function(ws, req) {
 
       const fileInfo = JSON.parse(message);
       const timeLimit = fileInfo.timeLimit || config.default_expire_seconds;
-      const dlimit = fileInfo.dlimit || 1;
+      const dlimit = fileInfo.dlimit || config.default_downloads;
       const metadata = fileInfo.fileMetadata;
       const auth = fileInfo.authorization;
       const user = await fxa.verify(fileInfo.bearer);

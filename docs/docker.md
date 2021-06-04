@@ -29,7 +29,7 @@ Config options expecting array values (e.g. `EXPIRE_TIMES_SECONDS`, `DOWNLOAD_CO
 | Name     | Description |
 |------------------|-------------|
 | `BASE_URL`       | The HTTPS URL where traffic will be served (e.g. `https://send.firefox.com`)
-| `DETECT_BASE_URL` | Autodetect the base URL using browser if `BASE_URL` is unset (defaults to `false`) 
+| `DETECT_BASE_URL` | Autodetect the base URL using browser if `BASE_URL` is unset (defaults to `false`)
 | `PORT`           | Port the server will listen on (defaults to `1443`)
 | `NODE_ENV`       | Run in `development` mode (unsafe) or `production` mode (the default)
 | `SEND_FOOTER_DMCA_URL` | A URL to a contact page for DMCA requests (empty / not shown by default)
@@ -49,6 +49,8 @@ Configure the limits for uploads and downloads. Long expiration times are risky 
 | `MAX_DOWNLOADS` | Maximum number of downloads (defaults to `100`)
 | `DOWNLOAD_COUNTS` | Download limit options to show in UI dropdown, e.g. `10,1,2,5,10,15,25,50,100,1000`
 | `EXPIRE_TIMES_SECONDS` | Expire time options to show in UI dropdown, e.g. `3600,86400,604800,2592000,31536000`
+| `DEFAULT_DOWNLOADS` | Default download limit in UI (defaults to `1`)
+| `DEFAULT_EXPIRE_SECONDS` | Default expire time in UI (defaults to `86400`)
 
 *Note: more options can be found here: https://github.com/timvisee/send/blob/master/server/config.js*
 
@@ -89,7 +91,7 @@ $ docker run -p 1443:1443 \
   registry.gitlab.com/timvisee/send:latest
 ```
 
-*Note: make sure to replace the example values above with your real values before running.* 
+*Note: make sure to replace the example values above with your real values before running.*
 
 
 **Run totally self-hosted using the current filesystem directry (`$PWD`) to store the Redis data and file uploads, with a `5GB` upload limit, 1 month expiry, and contact URL set.**

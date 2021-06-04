@@ -15,6 +15,7 @@ module.exports = {
     FOOTER_SOURCE_URL: config.footer_source_url
   },
   DEFAULTS: {
+    DOWNLOADS: config.default_downloads,
     DOWNLOAD_COUNTS: config.download_counts,
     EXPIRE_TIMES_SECONDS: config.expire_times_seconds,
     EXPIRE_SECONDS: config.default_expire_seconds
