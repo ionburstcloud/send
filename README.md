@@ -152,6 +152,7 @@ AWS example using Ubuntu Server `20.04`: [docs/AWS.md](docs/AWS.md)
 - Web: _this repository_
 - Command-line: [`ffsend`](https://github.com/timvisee/ffsend)
 - Android: _see [Android](#android) section_
+- Thunderbird: [FileLink provider for Send](https://addons.thunderbird.net/en-US/thunderbird/addon/filelink-provider-for-send/)
 
 #### Android
 
