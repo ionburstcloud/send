@@ -141,6 +141,7 @@
     "cldr-core": "^35.1.0",
     "configstore": "github:dannycoates/configstore#master",
     "convict": "^5.2.1",
+    "double-ended-queue": "^2.1.0-0",
     "express": "^4.17.1",
     "helmet": "^3.23.3",
     "mkdirp": "^0.5.1",
