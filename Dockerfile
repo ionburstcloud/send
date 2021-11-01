@@ -7,6 +7,7 @@
 
 # Build project
 FROM node:current-alpine AS builder
+ENV NODE_OPTIONS=--openssl-legacy-provider
 RUN set -x \
     # Add user
     && addgroup --gid 10001 app \
@@ -27,6 +28,7 @@ RUN set -x \
 
 # Main image
 FROM node:current-alpine
+ENV NODE_OPTIONS=--openssl-legacy-provider
 RUN set -x \
     # Add user
     && addgroup --gid 10001 app \
