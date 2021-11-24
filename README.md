@@ -1,4 +1,4 @@
-# [![Send](./assets/icon.svg)](https://gitlab.com/timvisee/send/) Send
+# [![Send](./assets/icon-64x64.png)](https://gitlab.com/timvisee/send/) Send
 
 [![Build status on GitLab CI][gitlab-ci-master-badge]][gitlab-ci-link]
 [![Latest release][release-badge]][release-link]
