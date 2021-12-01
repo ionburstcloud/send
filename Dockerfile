@@ -6,7 +6,7 @@
 
 
 # Build project
-FROM node:current-alpine AS builder
+FROM node:16.13-alpine3.13 AS builder
 ENV NODE_OPTIONS=--openssl-legacy-provider
 RUN set -x \
     # Add user
@@ -27,7 +27,7 @@ RUN set -x \
 
 
 # Main image
-FROM node:current-alpine
+FROM node:16.13-alpine3.13
 ENV NODE_OPTIONS=--openssl-legacy-provider
 RUN set -x \
     # Add user
