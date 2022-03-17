@@ -6,7 +6,8 @@ module.exports = async function(req, res) {
   const id = req.params.id;
   try {
     const meta = req.meta;
-    const contentLength = await storage.length(id);
+    //const contentLength = await storage.length(id);
+    //console.log("Length is:" + contentLength);
     const fileStream = await storage.get(id);
     let cancelled = false;
 
@@ -16,8 +17,7 @@ module.exports = async function(req, res) {
     });
 
     res.writeHead(200, {
-      'Content-Type': 'application/octet-stream',
-      'Content-Length': contentLength
+      'Content-Type': 'application/octet-stream'
     });
     fileStream.pipe(res).on('finish', async () => {
       if (cancelled) {

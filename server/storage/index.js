@@ -10,7 +10,9 @@ function getPrefix(seconds) {
 class DB {
   constructor(config) {
     let Storage = null;
-    if (config.s3_bucket) {
+    if (config.ionburst) {
+      Storage = require('./ionburst');
+    } else if (config.s3_bucket) {
       Storage = require('./s3');
     } else if (config.gcs_bucket) {
       Storage = require('./gcs');

@@ -1,0 +1,7 @@
+{
+    "Ionburst": {
+        "Profile": "send",
+        "IonburstUri": "https://api.eu-west-1.ionburst.cloud/",
+        "TraceCredentialsFile": "OFF"
+    }
+}
