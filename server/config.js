@@ -26,7 +26,7 @@ convict.addFormat({
 const conf = convict({
   ionburst: {
     format: String,
-    default: 'true'
+    default: ''
   },
   s3_bucket: {
     format: String,
@@ -90,7 +90,7 @@ const conf = convict({
   },
   redis_host: {
     format: String,
-    default: '127.0.0.1',
+    default: 'localhost',
     env: 'REDIS_HOST'
   },
   redis_port: {
