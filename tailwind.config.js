@@ -34,6 +34,12 @@ const colors = {
   // unspec
   'orange-40': '#ffb24c',
   'orange-30': '#ffd399',
+  // ibc
+  'orange-ibc1': '#fb6a26',
+  'orange-ibc2': '#e55d28',
+  'orange-ibc3': '#DB5621',
+  'orange-ibc4': '#FF8A5C',
+  'orange-cta': '#ef7a2e',
 
   'yellow-90': '#3e2800',
   'yellow-80': '#715100',
@@ -206,12 +212,18 @@ module.exports = {
     },
     borderColor: global.Object.assign({ default: colors['grey-30'] }, colors),
     borderRadius: {
+      //none: '0',
+      //sm: '.125rem',
+      //default: '.25rem',
+      //lg: '.5rem',
+      //xl: '1rem',
+      //full: '9999px'
       none: '0',
-      sm: '.125rem',
-      default: '.25rem',
-      lg: '.5rem',
-      xl: '1rem',
-      full: '9999px'
+      sm: '0',
+      default: '0',
+      lg: '0',
+      xl: '0',
+      full: '0'
     },
     width: {
       auto: 'auto',

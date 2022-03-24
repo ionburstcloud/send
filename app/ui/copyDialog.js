@@ -21,7 +21,7 @@ module.exports = function(name, url) {
           <input
             type="text"
             id="share-url"
-            class="block w-full my-4 border rounded-lg leading-loose h-12 px-2 py-1 dark:bg-grey-80"
+            class="block w-full my-4 border rounded-lg leading-loose h-12 px-2 py-1 dark:bg-purple-ibc2"
             value="${url}"
             readonly="true"
           />

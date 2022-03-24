@@ -6,7 +6,7 @@ module.exports = function(state) {
   return html`
     <div
       id="download-complete"
-      class="flex flex-col items-center justify-center h-full w-full bg-white p-2 dark:bg-grey-90"
+      class="flex flex-col items-center justify-center h-full w-full bg-white p-2 dark:bg-purple-ibc2"
     >
       <h1 class="text-center text-3xl font-bold my-2">
         ${state.translate('downloadFinish')}

@@ -6,7 +6,7 @@ module.exports = function(state, emit) {
 
   const div = html`
     <div
-      class="h-full w-full flex flex-col items-center justify-center bg-white py-8 max-w-md mx-auto dark:bg-grey-90"
+      class="h-full w-full flex flex-col items-center justify-center bg-white py-8 max-w-md mx-auto dark:bg-purple-ibc2"
     >
       <h1 class="text-3xl font-bold mb-4">
         ${state.translate('downloadTitle')}

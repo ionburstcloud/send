@@ -58,7 +58,7 @@ class Footer extends Component {
     } else {
       links.push(html`
         <li class="m-2">
-          <a href="https://gitlab.com/timvisee/send" target="_blank">
+          <a href="https://gitlab.com/jishf/send" target="_blank">
             ${translate('footerLinkSource')}
           </a>
         </li>

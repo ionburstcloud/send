@@ -3,7 +3,7 @@ const html = require('choo/html');
 module.exports = function intro(state) {
   return html`
     <send-intro
-      class="flex flex-col items-center justify-center bg-white px-6 md:py-0 py-6 mb-0 h-full w-full dark:bg-grey-90"
+      class="flex flex-col items-center justify-center bg-white px-6 md:py-0 py-6 mb-0 h-full w-full dark:bg-purple-ibc2"
     >
       <div class="mt-12 flex flex-col h-full">
         <h1 class="text-3xl font-bold md:pb-2">

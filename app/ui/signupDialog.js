@@ -35,7 +35,7 @@ module.exports = function() {
             <input
               id="email-input"
               type="email"
-              class="hidden border rounded-lg w-full px-2 py-1 h-12 mb-3 text-lg text-grey-70 leading-loose dark:bg-grey-80 dark:text-white"
+              class="hidden border rounded-lg w-full px-2 py-1 h-12 mb-3 text-lg text-grey-70 leading-loose dark:bg-purple-ibc2 dark:text-white"
               placeholder=${state.translate('emailPlaceholder')}
             />
             <input

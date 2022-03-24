@@ -39,7 +39,7 @@ body {
 }
 
 .btn {
-  @apply bg-blue-60;
+  @apply bg-orange-ibc1;
   @apply text-white;
   @apply cursor-pointer;
   @apply py-4;
@@ -48,11 +48,11 @@ body {
 }
 
 .btn:hover {
-  @apply bg-blue-70;
+  @apply bg-orange-ibc2;
 }
 
 .btn:focus {
-  @apply bg-blue-70;
+  @apply bg-orange-ibc2;
 }
 
 .checkbox {
@@ -154,15 +154,15 @@ footer li a:hover {
 }
 
 .link-blue {
-  @apply text-blue-60;
+  @apply text-orange-ibc1;
 }
 
 .link-blue:hover {
-  @apply text-blue-70;
+  @apply text-orange-ibc2;
 }
 
 .link-blue:focus {
-  @apply text-blue-70;
+  @apply text-orange-ibc2;
 }
 
 .main-header img {
@@ -283,38 +283,38 @@ select {
   }
 
   .btn {
-    @apply bg-blue-40;
+    @apply bg-orange-ibc1;
     @apply text-white;
   }
 
   .btn:hover {
-    @apply bg-blue-50;
+    @apply bg-orange-ibc2;
   }
 
   .btn:focus {
-    @apply bg-blue-50;
+    @apply bg-orange-ibc2;
   }
 
   .link-blue {
-    @apply text-blue-40;
+    @apply text-orange-ibc1;
   }
 
   .link-blue:hover {
-    @apply text-blue-50;
+    @apply text-orange-ibc2;
   }
 
   .link-blue:focus {
-    @apply text-blue-50;
+    @apply text-orange-ibc2;
   }
 
   .main > section {
-    @apply bg-grey-90;
+    @apply bg-purple-ibc2;
   }
 
   @screen md {
     .main > section {
       @apply border;
-      @apply border-grey-80;
+      @apply border-purple-ibc2;
     }
   }
 }
