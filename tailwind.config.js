@@ -103,7 +103,7 @@ const colors = {
   'purple-ibc5': '#785b82',
   'purple-ibc6': '#371F3D',
   'purple-ibc7': '#5F4266',
-  'purple-ibc8': '7B5F82',
+  'purple-ibc8': '#7B5F82',
 
   // 'pink-darkest': '#451225',
   // 'pink-darker': '#6f213f',

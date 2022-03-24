@@ -53,7 +53,7 @@ function password(state) {
           id="password-input"
           class="${state.archive.password
             ? ''
-            : 'invisible'} border rounded focus:border-orange-ibc2 leading-normal my-1 py-1 px-2 h-8 dark:bg-purple-ibc3"
+            : 'invisible'} border-purple-ibc3 dark:border-purple-ibc3 rounded focus:border-orange-ibc2 leading-normal my-1 py-1 px-2 h-8 dark:bg-purple-ibc3"
           autocomplete="off"
           maxlength="${MAX_LENGTH}"
           type="password"
@@ -261,7 +261,7 @@ module.exports = function(state, emit, archive) {
   return html`
     <send-archive
       id="archive-${archive.id}"
-      class="flex flex-col items-start rounded shadow-light bg-white p-4 w-full dark:bg-purple-ibc2 dark:border dark:border-grey-70"
+      class="flex flex-col items-start rounded shadow-light bg-white p-4 w-full dark:bg-purple-ibc2 dark:border dark:border-purple-ibc3"
     >
       ${archiveInfo(
         archive,
@@ -280,7 +280,7 @@ module.exports = function(state, emit, archive) {
         ${expiryInfo(state.translate, archive)}
       </div>
       ${archiveDetails(state.translate, archive)}
-      <hr class="w-full border-t my-4 dark:border-grey-70" />
+      <hr class="w-full border-t my-4 dark:border-purple-ibc3" />
       <div class="flex justify-between w-full">
         ${dl} ${copyOrShare}
       </div>
@@ -335,7 +335,7 @@ module.exports.wip = function(state, emit) {
             fileInfo(f, remove(f, state.translate('deleteButtonHover')))
           ),
         'flex-shrink bg-grey-10 rounded-t overflow-y-auto px-6 py-4 md:h-full md:max-h-half-screen dark:bg-purple-ibc2',
-        'bg-white px-2 my-2 shadow-light rounded dark:bg-purple-ibc2 dark:border dark:border-grey-80'
+        'bg-white px-2 my-2 shadow-light rounded dark:bg-purple-ibc2 dark:border dark:border-purple-ibc3'
       )}
       <div
         class="flex-shrink-0 flex-grow flex items-end p-4 bg-grey-10 rounded-b mb-1 font-medium dark:bg-purple-ibc3"
@@ -488,7 +488,7 @@ module.exports.empty = function(state, emit) {
         `;
   return html`
     <send-upload-area
-      class="flex flex-col items-center justify-center border-2 border-dashed border-grey-transparent rounded px-6 py-16 h-full w-full dark:border-grey-60"
+      class="flex flex-col items-center justify-center border-2 border-dashed border-grey-transparent rounded px-6 py-16 h-full w-full dark:border-purple-ibc3"
       onclick="${e => {
         if (e.target.tagName !== 'LABEL') {
           document.getElementById('file-upload').click();
@@ -566,7 +566,7 @@ module.exports.preview = function(state, emit) {
     <send-archive
       class="flex flex-col max-h-full bg-white p-4 w-full md:w-128 dark:bg-purple-ibc2"
     >
-      <div class="border rounded py-3 px-6 dark:border-grey-70">
+      <div class="border rounded py-3 px-6 dark:border-purple-ibc3">
         ${archiveInfo(archive)} ${details}
       </div>
       <button

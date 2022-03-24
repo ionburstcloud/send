@@ -73,6 +73,8 @@ body {
   /* @apply bg-grey-10; */
   @apply border;
   @apply rounded-sm;
+  @apply border-purple-ibc3;
+  @apply bg-purple-ibc3;
 
   content: '';
   height: 1.5rem;
@@ -92,6 +94,7 @@ body {
 .checkbox > input:checked + label::before {
   @apply bg-orange-ibc1;
   @apply border-orange-ibc1;
+  @apply text-purple-ibc2;
 
   background-image: url('../assets/lock.svg');
   background-position: center;
@@ -186,14 +189,14 @@ footer li a:hover {
 }
 
 progress {
-  @apply bg-grey-30;
+  @apply bg-purple-ibc3;
   @apply rounded-sm;
   @apply w-full;
   @apply h-1;
 }
 
 progress::-webkit-progress-bar {
-  @apply bg-grey-30;
+  @apply bg-purple-ibc3;
   @apply rounded-sm;
   @apply w-full;
   @apply h-1;
@@ -212,7 +215,7 @@ progress::-webkit-progress-value {
       rgba(255, 255, 255, 0.4) 80%,
       transparent 80%
     ),
-    -webkit-linear-gradient(left, #0a84ff, #0a84ff);
+    -webkit-linear-gradient(left, #744d7d, #e55d28);
   /* stylelint-enable */
   border-radius: 2px;
   background-size: 21px 20px, 100% 100%, 100% 100%;
@@ -232,7 +235,7 @@ progress::-moz-progress-bar {
       rgba(255, 255, 255, 0.4) 80%,
       transparent 80%
     ),
-    -moz-linear-gradient(left, #0a84ff, #0a84ff);
+    -moz-linear-gradient(left, #744d7d, #e55d28);
   /* stylelint-enable */
   border-radius: 2px;
   background-size: 21px 20px, 100% 100%, 100% 100%;
@@ -255,6 +258,7 @@ select {
   background-image: url('../assets/select-arrow.svg');
   background-position: calc(100% - 0.75rem);
   background-repeat: no-repeat;
+  border-color: #2a142e;
 }
 
 @screen md {
@@ -284,7 +288,7 @@ select {
 
   .btn {
     @apply bg-orange-ibc1;
-    @apply text-white;
+    @apply text-purple-ibc2;
   }
 
   .btn:hover {
