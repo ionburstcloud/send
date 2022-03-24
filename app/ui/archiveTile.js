@@ -53,7 +53,7 @@ function password(state) {
           id="password-input"
           class="${state.archive.password
             ? ''
-            : 'invisible'} border rounded focus:border-blue-60 leading-normal my-1 py-1 px-2 h-8 dark:bg-purple-ibc2"
+            : 'invisible'} border rounded focus:border-orange-ibc2 leading-normal my-1 py-1 px-2 h-8 dark:bg-purple-ibc3"
           autocomplete="off"
           maxlength="${MAX_LENGTH}"
           type="password"
@@ -531,11 +531,14 @@ module.exports.empty = function(state, emit) {
   `;
 
   function focus(event) {
-    event.target.nextElementSibling.classList.add('bg-blue-70', 'outline');
+    event.target.nextElementSibling.classList.add('bg-orange-ibc2', 'outline');
   }
 
   function blur(event) {
-    event.target.nextElementSibling.classList.remove('bg-blue-70', 'outline');
+    event.target.nextElementSibling.classList.remove(
+      'bg-orange-ibc2',
+      'outline'
+    );
   }
 
   function add(event) {

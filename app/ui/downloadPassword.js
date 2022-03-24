@@ -31,7 +31,7 @@ module.exports = function(state, emit) {
           id="password-input"
           class="w-full border-l border-t border-b rounded-l-lg rounded-r-none ${invalid
             ? 'border-red dark:border-red-40'
-            : 'border-grey'} leading-loose px-2 py-1 dark:bg-grey-80"
+            : 'border-purple-ibc3'} leading-loose px-2 py-1 dark:bg-purple-ibc3"
           maxlength="32"
           autocomplete="off"
           placeholder="${state.translate('unlockInputPlaceholder')}"

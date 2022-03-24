@@ -82,16 +82,16 @@ body {
 }
 
 .checkbox > label:hover::before {
-  @apply border-blue-50;
+  @apply border-orange-ibc1;
 }
 
 .checkbox > input:focus + label::before {
-  @apply border-blue-50;
+  @apply border-orange-ibc1;
 }
 
 .checkbox > input:checked + label::before {
-  @apply bg-blue-50;
-  @apply border-blue-50;
+  @apply bg-orange-ibc1;
+  @apply border-orange-ibc1;
 
   background-image: url('../assets/lock.svg');
   background-position: center;
@@ -104,8 +104,8 @@ body {
 }
 
 .checkbox > input:disabled + label::before {
-  @apply bg-blue-50;
-  @apply border-blue-50;
+  @apply bg-orange-ibc1;
+  @apply border-orange-ibc1;
 
   background-image: url('../assets/lock.svg');
   background-position: center;
@@ -321,6 +321,7 @@ select {
 
 @tailwind utilities;
 
+/**
 @responsive {
   .shadow-light {
     box-shadow: 0 0 8px 0 rgba(12, 12, 13, 0.1);
@@ -332,7 +333,7 @@ select {
       0 6px 10px -4px rgba(14, 13, 26, 0.12);
   }
 }
-
+**/
 @variants focus {
   .outline {
     outline: 1px dotted grey;
