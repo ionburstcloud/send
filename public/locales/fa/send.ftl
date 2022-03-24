@@ -43,7 +43,7 @@ passwordSetError = امکان ثبت این گذواژه نیست
 
 ## Send version 2 strings
 
--send-brand = Send
+-send-brand = Ionburst Cloud Send
 -send-short-brand = ارسال
 -firefox = فایرفاکس
 -mozilla = موزیلا

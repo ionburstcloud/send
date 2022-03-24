@@ -43,7 +43,7 @@ passwordSetError = এই পাসওয়ার্ড সেট করা য
 
 ## Send version 2 strings
 
--send-brand = Send
+-send-brand = Ionburst Cloud Send
 -send-short-brand = প্রেরণ
 -firefox = Firefox
 -mozilla = Mozilla

@@ -43,8 +43,8 @@ passwordSetError = Δεν ήταν δυνατός ο ορισμός αυτού �
 
 ## Send version 2 strings
 
--send-brand = Send
--send-short-brand = Send
+-send-brand = Ionburst Cloud Send
+-send-short-brand = IBC Send
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Απλή, ιδιωτική κοινή χρήση αρχείων

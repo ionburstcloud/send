@@ -43,7 +43,7 @@ passwordSetError = Te tiweliket tiktaliat ini ichtakataketzalis
 
 ## Send version 2 strings
 
--send-brand = Send
+-send-brand = Ionburst Cloud Send
 -send-short-brand = Shiktitani
 -firefox = Firefox
 -mozilla = Mozilla

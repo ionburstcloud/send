@@ -43,7 +43,7 @@ passwordSetError = No se ha podido establecer la contraseña
 
 ## Send version 2 strings
 
--send-brand = Send
+-send-brand = Ionburst Cloud Send
 -send-short-brand = Enviar
 -firefox = Firefox
 -mozilla = Mozilla

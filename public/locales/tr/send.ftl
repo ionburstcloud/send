@@ -39,8 +39,8 @@ passwordSetError = Parola ayarlanamadı
 
 ## Send version 2 strings
 
--send-brand = Send
--send-short-brand = Send
+-send-brand = Ionburst Cloud Send
+-send-short-brand = IBC Send
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Basit ve gizli dosya paylaşımı

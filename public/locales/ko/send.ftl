@@ -36,8 +36,8 @@ passwordSetError = 이 비밀번호를 설정할 수 없었습니다
 
 ## Send version 2 strings
 
--send-brand = Send
--send-short-brand = Send
+-send-brand = Ionburst Cloud Send
+-send-short-brand = IBC Send
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = 간단하고, 사생활을 보호하는 파일 공유

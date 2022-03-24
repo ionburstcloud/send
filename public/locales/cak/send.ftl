@@ -43,7 +43,7 @@ passwordSetError = Man tikirel ta ninuk' re ewan tzij re'
 
 ## Send version 2 strings
 
--send-brand = Send
+-send-brand = Ionburst Cloud Send
 -send-short-brand = Titaq
 -firefox = Firefox
 -mozilla = Mozilla

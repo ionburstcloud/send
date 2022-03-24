@@ -41,7 +41,7 @@ passwordSetError = Nejin ichtakatajtol amo uel kiixtaliani
 
 ## Send version 2 strings
 
--send-brand = Send
+-send-brand = Ionburst Cloud Send
 -send-short-brand = Xiktitani
 -firefox = Firefox
 -mozilla = Mozilla

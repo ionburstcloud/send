@@ -51,7 +51,7 @@ passwordSetError = Nid oedd modd gosod y cyfrinair hwn
 
 ## Send version 2 strings
 
--send-brand = Send
+-send-brand = Ionburst Cloud Send
 -send-short-brand = Anfon
 -firefox = Firefox
 -mozilla = Mozilla

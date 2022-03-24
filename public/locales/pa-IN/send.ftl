@@ -43,7 +43,7 @@ passwordSetError = ਇਹ ਪਾਸਵਰਡ ਸੈੱਟ ਨਹੀਂ ਕੀਤ
 
 ## Send version 2 strings
 
--send-brand = Send
+-send-brand = Ionburst Cloud Send
 -send-short-brand = ਭੇਜੋ
 -firefox = ਫਾਇਰਫਾਕਸ
 -mozilla = ਮੋਜ਼ੀਲਾ

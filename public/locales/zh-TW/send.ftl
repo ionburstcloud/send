@@ -41,8 +41,8 @@ passwordSetError = 無法設定此密碼
 
 ## Send version 2 strings
 
--send-brand = Send
--send-short-brand = Send
+-send-brand = Ionburst Cloud Send
+-send-short-brand = IBC Send
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = 簡單而私密的檔案共享服務
